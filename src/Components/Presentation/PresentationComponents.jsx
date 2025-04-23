@@ -1,11 +1,9 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion  } from "motion/react"
 import { SlInfo } from "react-icons/sl";
 
 const PresentationComponents = ({ title, paragraph, extra, info, where }) => {
-    const [isHovered, setIsHovered] = React.useState(false);
-    const navigate = useNavigate(); 
+    const [isHovered, setIsHovered] = React.useState(false); 
 
     const handleMouseLeave = () => {
         setTimeout(() => {
@@ -13,9 +11,6 @@ const PresentationComponents = ({ title, paragraph, extra, info, where }) => {
         }, 500); 
     }
 
-    const handleClick = () => {
-        navigate(`/${where}`); 
-    }
 
   return (
     <>
@@ -29,7 +24,7 @@ const PresentationComponents = ({ title, paragraph, extra, info, where }) => {
                 </AnimatePresence>
               </div>
                 <div className='p-2 flex flex-row '>
-                  <p className='text-blue-900 text-sm 2xl:text-base'>{paragraph} <span className='italic font-medium'>{extra}</span> <a className='cursor-pointer' onClick={handleClick}>Ver mas</a></p>
+                  <p className='text-blue-900 text-sm 2xl:text-base'>{paragraph} <span className='italic font-medium'>{extra}</span> <a href={`/${where}`} className='cursor-pointer'>Ver mas</a></p>
                 </div>
             </div>
     </>
