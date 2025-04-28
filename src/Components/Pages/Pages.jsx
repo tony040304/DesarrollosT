@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../../Navs/NavBar'
 import ImageCarousel from '../imageCarousel'
+import PopUp from './PopUp'
 
 const Pages = ({ backGround, title, paragraph, infoList, moreInfo, images, video }) => {
   return (
@@ -17,6 +18,7 @@ const Pages = ({ backGround, title, paragraph, infoList, moreInfo, images, video
                         ))
                     }
                     <p className='text-blue-900 italic font-medium mb-12'>{moreInfo}</p>
+                    <PopUp/>
                 </div>
                 <ImageCarousel images={images} video={video}/>
             </div>

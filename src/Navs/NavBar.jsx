@@ -28,7 +28,9 @@ const NavBar = () => {
   const home = () => {
     nav('/')
   }
-
+  const contacto = () => {
+    nav('/#contacto')
+  }
 
   return (
     <nav className='fixed flex bg-primario w-full'>
@@ -50,8 +52,8 @@ const NavBar = () => {
               >
               <motion.ul layout transition={{ duration: 1 }} className="flex flex-row gap-8 md:gap-12 p-4 text-blue-900 font-bold italic">
                 <li className='cursor-pointer' onClick={home}>Home</li>
-                <li className='cursor-pointer'>Proyectos</li>
-                <li className='cursor-pointer'>Contacto</li>
+                <li className='cursor-not-allowed'>Proyectos</li>
+                <li className='cursor-pointer' onClick={contacto}>Contacto</li>
               </motion.ul>
             </motion.div>}
         </AnimatePresence>

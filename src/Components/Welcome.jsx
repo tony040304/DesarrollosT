@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom';
 import { SlArrowDown } from "react-icons/sl";
 
 const Welcome = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100); // pequeño delay para asegurar que el DOM esté listo
+      }
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen w-full h-full flex flex-col items-center justify-center text-blue-950">
       <div className="px-4 py-10 grid sm:grid-cols-1 lg:grid-cols-5 lg:grid-rows-5 2xl:px-0 2xl:py-0 2xl:grid-cols-10 gap-2 flex-1">
