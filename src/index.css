@@ -1,16 +1,19 @@
 @import "tailwindcss";
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #f5f4f3;
-
-  font-synthesis: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme {
+  --color-neon: #b1e936;
+  --color-neonblue: #080954;
+  --color-grayblue: #e5e7eb;
+  --color-lightblue: #2791d5;
+  --breakpoint-xs: 400px;
 }
 
+@font-face {
+  font-family: "RocaOne";
+  src: url("./Assets/Fonts/roca-one-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  font-family: "RocaOne", sans-serif;
+}

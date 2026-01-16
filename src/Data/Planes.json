@@ -1,0 +1,163 @@
+{
+  "planesFoto": [
+    {
+      "nombre": "Plan Foto + Video Básico",
+      "precio": 250,
+      "descripcion": "Ideal para marcas que necesitan contenido visual profesional para redes sociales y web.",
+      "actividades": [
+        "Sesión fotográfica (hasta 1 hora)",
+        "10 fotos editadas en alta calidad",
+        "1 video corto (hasta 30 segundos)",
+        "Edición básica de color y luz",
+        "Entrega digital del material",
+        "Asesoramiento de poses y encuadre"
+      ]
+    },
+    {
+      "nombre": "Plan Foto + Video Profesional",
+      "precio": 450,
+      "descripcion": "Pensado para negocios que quieren contenido constante y de alto impacto visual.",
+      "incluye": "+ Plan Foto + Video Básico",
+      "actividades": [
+        "Sesión extendida (hasta 2 horas)",
+        "25 fotos editadas en alta calidad",
+        "2 videos para redes (Reels / Shorts)",
+        "Edición profesional de video",
+        "Adaptación de formatos (vertical, cuadrado, horizontal)",
+        "Dirección creativa básica"
+      ]
+    },
+    {
+      "nombre": "Plan Foto + Video Premium",
+      "precio": 750,
+      "descripcion": "Solución completa para marcas que buscan contenido de alto nivel, storytelling y presencia fuerte en redes.",
+      "incluye": "+ Plan Foto + Video Profesional",
+      "actividades": [
+        "Jornada completa de producción",
+        "40+ fotos editadas premium",
+        "Video institucional o publicitario (1–2 min)",
+        "Guión y planificación de contenido",
+        "Edición avanzada + motion graphics",
+        "Optimización para redes y web",
+        "Entrega prioritaria"
+      ]
+    }
+  ],
+  "planesWeb": [
+    {
+      "nombre": "Plan Web WordPress",
+      "precio": 300,
+      "descripcion": "Ideal para negocios que necesitan una web profesional, rápida de implementar y fácil de administrar.",
+      "actividades": [
+        "Diseño visual personalizado",
+        "Implementación en WordPress",
+        "Hasta 5 secciones (Inicio, Servicios, Nosotros, Contacto, etc.)",
+        "Diseño responsive (mobile y desktop)",
+        "Formulario de contacto",
+        "Optimización básica de velocidad",
+        "SEO básico",
+        "Capacitación para autogestión"
+      ]
+    },
+    {
+      "nombre": "Plan Web React + Tailwind",
+      "precio": 600,
+      "descripcion": "Para marcas que buscan una experiencia moderna, visualmente impactante y de alto rendimiento.",
+      "incluye": "+ Plan Web WordPress",
+      "actividades": [
+        "Desarrollo con React",
+        "Maquetado con TailwindCSS",
+        "Animaciones con Framer Motion",
+        "Transiciones y microinteracciones",
+        "Código optimizado y escalable",
+        "Deploy en hosting o Vercel"
+      ]
+    },
+    {
+      "nombre": "Plan Aplicación Web a Medida",
+      "precio": 1200,
+      "descripcion": "Solución completa para empresas que necesitan lógica de negocio, usuarios, paneles y automatización.",
+      "incluye": "+ Plan Web React + Tailwind",
+      "actividades": [
+        "Backend en .NET",
+        "Autenticación de usuarios",
+        "Panel administrador",
+        "Conexión a base de datos",
+        "Roles y permisos",
+        "Funcionalidades a medida según negocio",
+        "Documentación técnica"
+      ]
+    }
+  ],
+  "planesRedes": [
+    {
+      "nombre": "Plan Inicial",
+      "precio": 250,
+      "descripcion": "Ideal para emprendedores que quieren empezar a tener presencia profesional en redes sociales.",
+      "actividades": [
+        "3 publicaciones semanales en feed",
+        "Diseño de piezas gráficas",
+        "Redacción de textos (copies)",
+        "Programación de contenido",
+        "Respuesta básica a mensajes y comentarios",
+        "Reporte mensual de resultados"
+      ]
+    },
+    {
+      "nombre": "Plan Crecimiento",
+      "precio": 400,
+      "descripcion": "Para marcas que buscan aumentar su visibilidad y engagement.",
+      "incluye": "+ Plan Inicial",
+      "actividades": [
+        "5 publicaciones semanales",
+        "Historias semanales",
+        "Optimización de perfil",
+        "Análisis de métricas",
+        "Mejora de estrategia de contenido"
+      ]
+    },
+    {
+      "nombre": "Plan Profesional",
+      "precio": 550,
+      "descripcion": "Pensado para negocios que quieren vender, posicionarse y escalar en redes sociales.",
+      "incluye": "+ Plan Crecimiento",
+      "actividades": [
+        "Publicaciones diarias",
+        "Reels y contenido en video",
+        "Estrategia de contenido personalizada",
+        "Gestión de campañas publicitarias",
+        "Reporte semanal detallado"
+      ]
+    }
+  ],
+  "planesIdentidad": [
+    {
+      "nombre": "Plan Identidad Esencial",
+      "precio": 200,
+      "descripcion": "Ideal para marcas que están empezando y necesitan una identidad visual clara y profesional.",
+      "actividades": [
+        "Diseño de logotipo principal",
+        "Paleta de colores",
+        "Tipografías corporativas",
+        "Versiones del logo (horizontal, vertical, isotipo)",
+        "Aplicaciones básicas (perfil de redes, firma de mail)",
+        "Entrega de archivos en alta calidad"
+      ]
+    },
+    {
+      "nombre": "Plan Identidad Profesional",
+      "precio": 400,
+      "descripcion": "Pensado para marcas que buscan coherencia visual, posicionamiento y una identidad sólida.",
+      "incluye": "+ Plan Identidad Esencial",
+      "actividades": [
+        "Manual de marca (brandbook)",
+        "Aplicaciones avanzadas (flyer, tarjeta, portada, etc.)",
+        "Sistema visual para redes sociales",
+        "Mockups de presentación",
+        "Lineamientos de uso de marca",
+        "Entrega organizada por formatos"
+      ]
+    }
+  ]
+
+}
