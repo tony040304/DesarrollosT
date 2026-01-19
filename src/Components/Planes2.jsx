@@ -37,12 +37,12 @@ const Planes2 = ({ mobile, md, lg, xl, fondo, title, click }) => {
     return (
         <div className={`${!isOpen ? 'h-screen' : 'h-fit'} w-full flex flex-col justify-start items-center ${fondo}`}>
             <h1 className='font-black text-4xl md:text-7xl xl:text-7xl text-wrap text-neon p-8 text-center'>{title}</h1>
-            <div className='flex justify-center items-center p-12 h-fit'>
+            <div className='flex justify-center items-center p-12 h-fit w-full'>
                 <AnimatePresence mode="wait">
                     <motion.div
                         animate={{ aspectRatio: aspectRatio, width: width }}
                         transition={{ duration: 0.5 }}
-                        className='bg-white flex flex-col xl:flex-row justify-center items-stretch rounded-2xl shadow-lg cursor-pointer'
+                        className='bg-white flex flex-col xl:flex-row justify-center items-stretch rounded-2xl shadow-lg cursor-pointer hover:shadow-lg hover:shadow-lightblue transition-transform transform hover:scale-105'
                     >
                         {
                             !isOpen ? (

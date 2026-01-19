@@ -8,10 +8,11 @@ const PlanMap = ({ planes, bg, text, button, w, click }) => {
             {
                 planes.map((plan, index) => (
                     <motion.div
-                        initial={{ opacity: 0, y: 50 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
                         exit={{ opacity: 0, y: 50 }}
-                        transition={{ duration: 0.5, delay: index * 0.2 }} className={`flex flex-col ${bg} rounded-2xl hover:shadow-lg transition-transform transform hover:scale-110 hover:shadow-blue-500 h-fit lg:w-1/4 ${w}`} key={index}>
+                        transition={{ duration: 0.5, delay: index * 0.2 }} className={`flex flex-col ${bg} rounded-2xl hover:shadow-lg transition-transform transform hover:scale-105 hover:shadow-blue-500 h-fit lg:w-1/4 ${w}`} key={index}>
                         <div className='border-b-4 border-white flex flex-row justify-center items-center'>
                             <Info text={text} info={plan.descripcion} />
                             <h1 className='font-bold text-3xl md:text-5xl lg:text-4xl text-white p-4'>{plan.nombre}</h1>
