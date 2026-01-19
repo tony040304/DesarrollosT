@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@source "./index.html";
+@source "./src/**/*.{js,jsx,ts,tsx}";
 
 @theme {
   --color-neon: #b1e936;
@@ -10,7 +12,7 @@
 
 @font-face {
   font-family: "RocaOne";
-  src: url("./Assets/Fonts/roca-one-regular.ttf") format("truetype");
+  src: url("/assets/fonts/roca-one-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

@@ -1,21 +1,7 @@
-import React, { useEffect } from 'react'
-import { useLocation } from 'react-router-dom';
+import React from 'react'
 import { SlArrowDown } from "react-icons/sl";
 
 const Welcome = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace('#', '');
-      const element = document.getElementById(id);
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }, 100); // pequeño delay para asegurar que el DOM esté listo
-      }
-    }
-  }, [location]);
 
   return (
     <div className="min-h-screen w-full h-full flex flex-col items-center justify-between text-blue-950 bg-gradient-to-l ">
