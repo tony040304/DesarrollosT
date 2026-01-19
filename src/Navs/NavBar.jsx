@@ -1,37 +1,24 @@
 import React, { useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'motion/react';
 import { SlMenu } from "react-icons/sl";
-import { useNavigate } from 'react-router-dom';
+import setScroll from '../Components/Hook/setScroll';
 
-const variants = {
-  hidden: {
-    opacity: 0,
-  },
+const menuVariants = {
+  hidden: { x: "100%" },
   visible: {
-    opacity: 1,
-    transition: {
-      duration: 1,
-      pathLength: 0.5,
-      ease: "easeInOut",
-    },
+    x: 0,
+    transition: { type: "spring", stiffness: 120, damping: 20 }
   },
-}
+  exit: {
+    x: "100%",
+    transition: { duration: 0.3 }
+  }
+};
 
 const NavBar = () => {
   const [NavOpen, setNavOpen] = useState(false)
-  const nav = useNavigate()
   const [scrollY, setScrollY] = React.useState(0)
-
-  const Open = () => {
-    setNavOpen(!NavOpen)
-  }
-
-  const home = () => {
-    nav('/')
-  }
-  const contacto = () => {
-    nav('/#contacto')
-  }
+  const { handleScrollTo } = setScroll();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,45 +31,52 @@ const NavBar = () => {
       window.removeEventListener('scroll', handleScroll)
     }
   })
-
   return (
     <>
       {
         window.scrollY > 780 && (
           <nav className='flex w-full bg-grayblue/50 backdrop-blur p-2 px-2 md:px-6 lg:px-12 xl:px-20 2xl:px-32 fixed top-0 left-0 z-50 shadow-md'>
             <div className='flex flex-row items-center justify-between w-full px-6'>
-              <motion.div className='w-20 cursor-pointer' onClick={home}
+              <motion.div className='w-20 cursor-pointer'
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}>
                 <img src="/LogoAzul.png" alt="Logo" /></motion.div>
               <div className='md:block hidden font-bold text-2xl text-neonblue'>
                 <div className='flex flex-row gap-x-10'>
-                  <ul>Inicio</ul>
-                  <ul>servicios</ul>
-                  <ul>Contacto</ul>
-                  <ul>Contacto</ul>
+                  <ul className='cursor-pointer' onClick={() => handleScrollTo(950)}>Inicio</ul>
+                  <ul className='cursor-pointer' onClick={() => handleScrollTo(1890)}>Servicios</ul>
+                  <ul className='cursor-pointer' onClick={() => handleScrollTo(5686)}>Proyectos</ul>
+                  <ul className='cursor-pointer' onClick={() => handleScrollTo(7584)}>Contacto</ul>
                 </div>
               </div>
               <div className='md:hidden block'>
                 <AnimatePresence>
-                  {NavOpen &&
-                    <motion.div className="fixed flex justify-center items-center w-full md:w-3/4 md:text-lg bg-secundario rounded-lg mx-auto left-0 right-0 top-10 md:top-14"
+                  {NavOpen && (
+                    <motion.aside
+                      variants={menuVariants}
                       initial="hidden"
                       animate="visible"
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.5 }}
-                      variants={variants}
-                      layoutId="menu"
+                      exit="exit"
+                      className="fixed top-0 right-0 h-screen w-3/4 bg-zinc-900 z-50 p-6"
                     >
-                      <motion.ul layout transition={{ duration: 1 }} className="flex flex-row gap-8 md:gap-12 p-4 text-blue-900 font-bold italic">
-                        <li className='cursor-pointer' onClick={home}>Home</li>
-                        <li className='cursor-not-allowed'>Proyectos</li>
-                        <li className='cursor-pointer' onClick={contacto}>Contacto</li>
-                      </motion.ul>
-                    </motion.div>}
+                      <button
+                        onClick={() => setNavOpen(false)}
+                        className="text-neon text-2xl mb-10"
+                      >
+                        ✕
+                      </button>
+
+                      <ul className="flex flex-col gap-6 text-white text-lg">
+                        <li onClick={() => { setNavOpen(false); handleScrollTo(800) }}>Inicio</li>
+                        <li onClick={() => { setNavOpen(!NavOpen); handleScrollTo(1600) }}>Servicios</li>
+                        <li onClick={() => { setNavOpen(!NavOpen); handleScrollTo(6800) }}>Proyectos</li>
+                        <li onClick={() => { setNavOpen(!NavOpen); handleScrollTo(8415) }}>Contacto</li>
+                      </ul>
+                    </motion.aside>
+                  )}
                 </AnimatePresence>
-                <SlMenu className='text-blue-950 cursor-pointer' onClick={Open} />
+                <SlMenu onClick={() => setNavOpen(!NavOpen)} className='text-blue-950 cursor-pointer' />
               </div>
             </div>
           </nav>

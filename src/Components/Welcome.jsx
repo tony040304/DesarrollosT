@@ -18,7 +18,7 @@ const Welcome = () => {
   }, [location]);
 
   return (
-    <div className="min-h-screen w-full h-full flex flex-col items-center justify-between text-blue-950 bg-[radial-gradient(circle_at_center,_#b1e936_0%,_#ffffff_75%)]">
+    <div className="min-h-screen w-full h-full flex flex-col items-center justify-between text-blue-950 bg-gradient-to-l ">
       <div className="flex flex-col justify-center items-center mt-20 gap-8 md:mt-30 xl:flex-row xl:gap-16 xl:mt-80">
         <div className="w-full flex justify-center">
           <img src="/Logo.png" alt="Innovanto" className='w-5/6 md:w-2/3 lg:w-1/2' />
