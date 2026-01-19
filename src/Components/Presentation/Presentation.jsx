@@ -10,7 +10,7 @@ const Presentation = () => {
       <NavBar />
       <section
         id="presentation"
-        className="relative min-h-screen h-full flex flex-col items-center justify-center p-4 bg-primario overflow-hidden bg-[url('./FondoPantalla.png')] bg-cover bg-cente"
+        className="relative min-h-screen h-full flex flex-col items-center justify-center p-4 bg-primario overflow-hidden bg-[url('/FondoPantalla.png')] bg-cover bg-cente"
       >
 
         <div className="relative z-10 w-full flex flex-col items-center">

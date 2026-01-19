@@ -4,7 +4,7 @@ import InstagramLogo from './InstagramLogo'
 
 const Contacto = () => {
     return (
-        <div className='w-full h-screen flex bg-[url(../FondoContacto.jpg)] bg-center text-white flex-col items-center'>
+        <div className='w-full h-screen flex bg-[url(/FondoContacto.jpg)] bg-center text-white flex-col items-center'>
             <div className='w-full flex justify-center items-start pt-30'>
                 <h1 className='text-6xl text-neon'>Contacto</h1>
             </div>
