@@ -16,30 +16,34 @@ const Presentation = () => {
         <div className="relative z-10 w-full flex flex-col items-center">
           <PresentationComponents
             title="Pagina web"
-            paragraph="Creamos la pagina web que mas se adecue a tu negocio y que te ayude a atraer nuevos clientes."
-            extra="100% personalizada. 100% original. 100% funcional."
-            info="Página web simple que se utiliza para atraer clientes."
-            where="landingPage"
+            paragraph="Creamos páginas web 100% personalizadas, originales y funcionales, diseñadas para mostrar tus productos o servicios de manera atractiva y captar nuevos clientes. Nuestro objetivo es que tu sitio sea una verdadera herramienta de crecimiento para tu negocio."
+            extra=""
+            info=""
+            where={1890}
+            wherePhone={1630}
           />
 
           <PresentationComponents
             title="Community manager"
-            paragraph="Manejamos tus redes sociales para que puedas dedicarte a lo que realmente importa."
-            info="Designamos un encargado para que maneje tus redes sociales."
-            where="CommunityManager"
+            paragraph="Gestionamos tus redes sociales con estrategias efectivas que fortalecen tu marca y generan interacción real con tu audiencia. Nos ocupamos de crear contenido atractivo, responder a tus clientes y potenciar tu presencia digital, para que puedas enfocarte en lo que realmente importa: tu negocio."
+            info=""
+            where={2855}
+            wherePhone={3094}
           />
 
           <PresentationComponents
             title="Foto y video profesional"
-            paragraph="Fotografiamos y grabamos contenido profesional para tus redes sociales y página web."
-            info="Gracias a nuestro equipo de fotógrafos y videógrafos profesionales."
-            where="CommunityManager"
+            paragraph="Producimos contenido visual profesional para tus redes y página web, transmitiendo la esencia de tu marca y generando mayor impacto en tu comunicación digital."
+            info=""
+            where={3770}
+            wherePhone={3800}
           />
           <PresentationComponents
             title="Identidad visual"
-            paragraph="Creamos tu identidad visual para que te destaquen en el mercado."
-            info="Logos, paletas de colores, tipografías y más."
-            where="CommunityManager"
+            paragraph="Diseñamos la identidad gráfica de tu empresa para que destaque en el mercado y sea reconocida fácilmente por tus clientes."
+            info=""
+            where={4677}
+            wherePhone={5425}
           />
         </div>
       </section>

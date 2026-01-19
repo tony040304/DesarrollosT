@@ -21,7 +21,7 @@ const ProyectsPhone = ({ urlImg1, urlImg2, size = "w-60", fondo }) => {
                 <div className="relative flex justify-center items-center">
                     <motion.div
                         animate={{ x: x, y: 0, scale: scale, rotate: -5 }}
-                        whileHover={{ scale: 1.2, x: x }}
+                        whileTap={{ scale: 1.2, x: x }}
                         transition={{ type: "spring" }}
                         className={`rounded-2xl shadow-lg border ${size} absolute bg-neon cursor-pointer`}
                         onHoverStart={() => handlex1(200, 0.9)}
@@ -36,7 +36,7 @@ const ProyectsPhone = ({ urlImg1, urlImg2, size = "w-60", fondo }) => {
 
                     <motion.div
                         animate={{ x: x1, y: 0, scale: scale1, rotate: 5 }}
-                        whileHover={{ scale: 1.2, x: x1 }}
+                        whileTap={{ scale: 1.2, x: x1 }}
                         transition={{ type: "spring" }}
                         className={`rounded-2xl shadow-lg border ${size} absolute bg-neon cursor-pointer`}
                         onHoverStart={() => handlex(-200, 0.9)}

@@ -7,7 +7,6 @@ const setScroll = () => {
             behavior: "smooth",
         });
     };
-
     return {
         handleScrollTo,
     };
