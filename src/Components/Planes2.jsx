@@ -42,7 +42,7 @@ const Planes2 = ({ mobile, md, lg, xl, fondo, title, click }) => {
                     <motion.div
                         animate={{ aspectRatio: aspectRatio, width: width }}
                         transition={{ duration: 0.5 }}
-                        className={`bg-white flex flex-col xl:flex-row justify-center items-stretch rounded-2xl shadow-lg cursor-pointer ${!isOpen ? 'hover:shadow-lightblue transition-transform transform hover:scale-105 hover:shadow-lg' : ''}`}
+                        className={`bg-white flex flex-col xl:flex-row justify-center items-stretch rounded-2xl shadow-2xl cursor-pointer ${!isOpen ? 'hover:shadow-lightblue transition-transform transform hover:scale-105 hover:shadow-lg' : ''}`}
                     >
                         {
                             !isOpen ? (

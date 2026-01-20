@@ -63,29 +63,32 @@
       "nombre": "Plan Web React + Tailwind",
       "precio": 600,
       "descripcion": "Para marcas que buscan una experiencia moderna, visualmente impactante y de alto rendimiento.",
-      "incluye": "+ Plan Web WordPress",
+      "incluye": "",
       "actividades": [
         "Desarrollo con React",
         "Maquetado con TailwindCSS",
         "Animaciones con Framer Motion",
         "Transiciones y microinteracciones",
         "Código optimizado y escalable",
-        "Deploy en hosting o Vercel"
+        "Deploy en hosting"
       ]
     },
     {
-      "nombre": "Plan Aplicación Web a Medida",
-      "precio": 1200,
-      "descripcion": "Solución completa para empresas que necesitan lógica de negocio, usuarios, paneles y automatización.",
-      "incluye": "+ Plan Web React + Tailwind",
+      "nombre": "Plan Web de ventas",
+      "precio": "Consultar",
+      "descripcion": "Solución completa para empresas que necesitan vender sus productos en linea con funcionalidades avanzadas.",
+      "incluye": "",
       "actividades": [
-        "Backend en .NET",
-        "Autenticación de usuarios",
+        "WooCommerce o desarrollo a medida",
         "Panel administrador",
         "Conexión a base de datos",
         "Roles y permisos",
         "Funcionalidades a medida según negocio",
-        "Documentación técnica"
+        "Documentación técnica",
+        "Soporte post-lanzamiento",
+        "Deploy en hosting",
+        "Mucho mas...",
+        "Pedir reunion para cotización personalizada"
       ]
     }
   ],
@@ -159,5 +162,4 @@
       ]
     }
   ]
-
 }

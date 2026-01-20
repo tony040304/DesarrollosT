@@ -29,7 +29,7 @@ const PlanMap = ({ planes, bg, text, button, w, click }) => {
                                 </ul>
                             </div>
                             <div className='flex w-full justify-center flex-col items-center pt-0 px-4 pb-4 gap-2'>
-                                <h2 className='text-white font-bold text-4xl'>${new Intl.NumberFormat("es-AR").format(plan.precio)}</h2>
+                                <h2 className='text-white font-bold text-4xl'>{plan.precio === "Consultar" ? plan.precio : `$${plan.precio}`}</h2>
                                 <button onClick={click} className={`${button} font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-110 shadow-lightblue duration-200 ease-out shadow-md hover:shadow-xl hover:inset-shadow-sm focus:outline-none focus:ring-2 cursor-pointer`}>Obtener</button>
                             </div>
                         </div>

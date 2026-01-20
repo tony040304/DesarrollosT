@@ -31,7 +31,10 @@ const NavBar = () => {
       window.removeEventListener('scroll', handleScroll)
     }
   })
-  console.log(scrollY);
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    el?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       {
@@ -45,10 +48,10 @@ const NavBar = () => {
                 <img src="/LogoAzul.png" alt="Logo" /></motion.div>
               <div className='md:block hidden font-bold text-2xl text-neonblue'>
                 <div className='flex flex-row gap-x-10'>
-                  <ul className='cursor-pointer' onClick={() => handleScrollTo(950)}>Inicio</ul>
-                  <ul className='cursor-pointer' onClick={() => handleScrollTo(1890)}>Servicios</ul>
-                  <ul className='cursor-pointer' onClick={() => handleScrollTo(5686)}>Proyectos</ul>
-                  <ul className='cursor-pointer' onClick={() => handleScrollTo(7584)}>Contacto</ul>
+                  <ul className='cursor-pointer' onClick={() => scrollToSection("inicio")}>Inicio</ul>
+                  <ul className='cursor-pointer' onClick={() => scrollToSection("servicios")}>Servicios</ul>
+                  <ul className='cursor-pointer' onClick={() => scrollToSection("proyectos")}>Proyectos</ul>
+                  <ul className='cursor-pointer' onClick={() => scrollToSection("contacto")}>Contacto</ul>
                 </div>
               </div>
               <div className='md:hidden block'>
@@ -69,10 +72,10 @@ const NavBar = () => {
                       </button>
 
                       <ul className="flex flex-col gap-6 text-white text-lg">
-                        <li onClick={() => { setNavOpen(false); handleScrollTo(800) }}>Inicio</li>
-                        <li onClick={() => { setNavOpen(!NavOpen); handleScrollTo(1600) }}>Servicios</li>
-                        <li onClick={() => { setNavOpen(!NavOpen); handleScrollTo(6800) }}>Proyectos</li>
-                        <li onClick={() => { setNavOpen(!NavOpen); handleScrollTo(8415) }}>Contacto</li>
+                        <li onClick={() => { setNavOpen(false); scrollToSection("inicio") }}>Inicio</li>
+                        <li onClick={() => { setNavOpen(false); scrollToSection("servicios") }}>Servicios</li>
+                        <li onClick={() => { setNavOpen(false); scrollToSection("proyectos") }}>Proyectos</li>
+                        <li onClick={() => { setNavOpen(false); scrollToSection("contacto") }}>Contacto</li>
                       </ul>
                     </motion.aside>
                   )}
