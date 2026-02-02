@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { motion } from "framer-motion";
-import { div, title } from 'motion/react-client';
+import { motion, AnimatePresence } from "framer-motion";
+import AnimacionBlur from './AnimacionBlur';
 
-const ProyectsPhone = ({ urlImg1, urlImg2, size = "w-60", fondo, urlImg3, img, title }) => {
+const ProyectsPhone = ({ urlImg1, urlImg2, size = "w-60", fondo, urlImg3, img, title, click, click2, click3 }) => {
     const [x, setX] = useState(-50);
     const [x1, setX1] = useState(50);
     const [scale1, setScale1] = useState(1);
@@ -13,6 +13,9 @@ const ProyectsPhone = ({ urlImg1, urlImg2, size = "w-60", fondo, urlImg3, img, t
     const [scale2, setScale2] = useState(1);
     const [x2bool, setX2bool] = useState(true);
     const [x2Rotate, setX2Rotate] = useState(0);
+    const [open, setOpen] = useState(false);
+    const [open2, setOpen2] = useState(false);
+    const [open3, setOpen3] = useState(false);
 
 
     const handlex1 = () => {
@@ -66,23 +69,25 @@ const ProyectsPhone = ({ urlImg1, urlImg2, size = "w-60", fondo, urlImg3, img, t
     }
 
     return (
-        <div className={`h-screen flex flex-col items-center justify-start ${fondo} bg-cover bg-center object-bottom-right`}>
+        <div className={`h-screen flex flex-col items-center justify-start ${fondo} bg-cover gap-50`}>
             <h1 className='font-black text-4xl md:text-7xl xl:text-7xl text-nowrap text-neonblue p-8 w-full flex justify-center items-center text-center'>{title}</h1>
-            <div className={`h-screen flex items-center justify-center`}>
+            <div className={`h-fit flex items-center justify-center`}>
                 <div className="flex flex-col">
                     <div className="relative flex justify-center items-center">
                         <motion.div
                             animate={{ x: x, y: 0, scale: scale, rotate: -5 }}
                             whileTap={{ scale: 1.2, x: x }}
                             transition={{ type: "spring" }}
-                            className={`rounded-2xl shadow-lg border ${size} absolute bg-neon cursor-pointer`}
-                            onTap={() => handlex1()}
+                            className={`relative rounded-2xl shadow-lg border ${size} absolute bg-neon cursor-pointer overflow-hidden`}
+                            onTap={() => { setOpen(!open); handlex1(); }}
                         >
                             <img
                                 src={urlImg1}
                                 alt="desk"
                                 className="w-full h-auto rounded-2xl shadow-md shadow-neon block"
                             />
+
+                            <AnimacionBlur open={open} setOpen={setOpen} click={click} />
                         </motion.div>
 
                         <motion.div
@@ -90,13 +95,14 @@ const ProyectsPhone = ({ urlImg1, urlImg2, size = "w-60", fondo, urlImg3, img, t
                             whileTap={{ scale: 1.2, x: x1 }}
                             transition={{ type: "spring" }}
                             className={`rounded-2xl shadow-lg border ${size} absolute bg-neon cursor-pointer`}
-                            onTap={() => handlex()}
+                            onTap={() => { handlex(); setOpen2(!open2); }}
                         >
                             <img
                                 src={`${urlImg2}`}
                                 alt="desk"
                                 className={`rounded-2xl shadow-md shadow-neon ${img}`}
                             />
+                            <AnimacionBlur open={open2} setOpen={setOpen2} click={click2} />
                         </motion.div>
 
                         {urlImg3 &&
@@ -105,13 +111,14 @@ const ProyectsPhone = ({ urlImg1, urlImg2, size = "w-60", fondo, urlImg3, img, t
                                 whileTap={{ scale: 1.2, x: x2 }}
                                 transition={{ type: "spring" }}
                                 className={`rounded-2xl shadow-lg border ${size} absolute bg-neon cursor-pointer z-20`}
-                                onTap={() => handlex2()}
+                                onTap={() => { handlex2(); setOpen3(!open3); }}
                             >
                                 <img
                                     src={`${urlImg3}`}
                                     alt="desk"
                                     className="rounded-2xl shadow-md shadow-neon h-30 bg-cover bg-center object-cover"
                                 />
+                                <AnimacionBlur open={open3} setOpen={setOpen3} click={click3} />
                             </motion.div>
                         }
                     </div>

@@ -22,9 +22,11 @@
         "Sesión extendida (hasta 2 horas)",
         "25 fotos editadas en alta calidad",
         "2 videos para redes (Reels / Shorts)",
-        "Edición profesional de video",
-        "Adaptación de formatos (vertical, cuadrado, horizontal)",
-        "Dirección creativa básica"
+        "Edición de video cuidada",
+        "(ritmo, cortes, música y textos)",
+        "-Edición de color y luz avanzada",
+        "-Dirección básica de escena y poses",
+        "-Entrega digital del material"
       ]
     },
     {
@@ -34,12 +36,12 @@
       "incluye": "+ Plan Foto + Video Profesional",
       "actividades": [
         "Jornada completa de producción",
-        "40+ fotos editadas premium",
-        "Video institucional o publicitario (1–2 min)",
-        "Guión y planificación de contenido",
-        "Edición avanzada + motion graphics",
-        "Optimización para redes y web",
-        "Entrega prioritaria"
+        "-30 fotos editadas profesionalmente",
+        "-3 a 4 videos para reels o publicidad",
+        "-Edición profesional de video",
+        "-Planificación previa del contenido",
+        "-Definición de estilo visual según la marca",
+        "-Entrega digital del material"
       ]
     }
   ],
@@ -94,42 +96,51 @@
   ],
   "planesRedes": [
     {
-      "nombre": "Plan Inicial",
-      "precio": 250,
+      "nombre": "PLAN 1 · Base",
+      "precio": 150,
       "descripcion": "Ideal para emprendedores que quieren empezar a tener presencia profesional en redes sociales.",
       "actividades": [
-        "3 publicaciones semanales en feed",
-        "Diseño de piezas gráficas",
-        "Redacción de textos (copies)",
-        "Programación de contenido",
-        "Respuesta básica a mensajes y comentarios",
-        "Reporte mensual de resultados"
+        "-Estrategia inicial y orden del perfil",
+        "-Calendario mensual de contenidos",
+        "-Redacción de copys",
+        "-Reels con edición básica",
+        "-Fotos simples pensadas para redes",
+        "-Publicación y gestión de contenido",
+        "-8 posteos mensuales",
+        "-2 historias por semana",
+        "-Análisis básico de resultados"
       ]
     },
     {
-      "nombre": "Plan Crecimiento",
-      "precio": 400,
+      "nombre": "PLAN 2 · Avanzado",
+      "precio": 250,
       "descripcion": "Para marcas que buscan aumentar su visibilidad y engagement.",
-      "incluye": "+ Plan Inicial",
+      "incluye": "+ Plan 1",
       "actividades": [
-        "5 publicaciones semanales",
-        "Historias semanales",
-        "Optimización de perfil",
-        "Análisis de métricas",
-        "Mejora de estrategia de contenido"
+        "-Auditoría más profunda y lineamientos claros de comunicación",
+        "-Grabación de reels con mejor planificación",
+        "-Edición de video más cuidada (mejor ritmo, cortes, textos y música)",
+        "-Fotos más profesionales (mejor luz, encuadre y estética)",
+        "-10 posteos mensuales",
+        "-3 historias por semana",
+        "-Análisis orientado a optimizar crecimiento"
       ]
     },
     {
-      "nombre": "Plan Profesional",
+      "nombre": "PLAN 3 · Premium",
       "precio": 550,
-      "descripcion": "Pensado para negocios que quieren vender, posicionarse y escalar en redes sociales.",
-      "incluye": "+ Plan Crecimiento",
+      "descripcion": "Pensado para marcas que quieren delegar completamente sus redes y trabajar el posicionamiento en serio.",
+      "incluye": "+ Plan 2",
       "actividades": [
-        "Publicaciones diarias",
-        "Reels y contenido en video",
-        "Estrategia de contenido personalizada",
-        "Gestión de campañas publicitarias",
-        "Reporte semanal detallado"
+        "-Estrategia integral de contenidos y posicionamiento",
+        "-Definición de identidad visual y narrativa",
+        "-Calendario estratégico mensual",
+        "-Grabación y edición profesional de reels",
+        "-Sesión de fotos profesional mensual",
+        "-12 a 16 posteos mensuales",
+        "-Historias activas de lunes a viernes",
+        "-Gestión de comunidad (mensajes y comentarios)",
+        "-Análisis de métricas + reunión mensual"
       ]
     }
   ],

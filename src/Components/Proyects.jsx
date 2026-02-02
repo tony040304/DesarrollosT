@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 const Proyects = ({ urlImg1, urlImg2, urlImg3, x, x1, y = 0, xTrans = -250, x1trans = 250, size = "md:w-60", fondo, img, title }) => {
     return (
-        <div className={`h-screen flex flex-col items-center justify-start ${fondo} bg-cover bg-center object-bottom-right`}>
-            <h1 className='font-black text-4xl md:text-7xl xl:text-7xl text-nowrap text-neonblue p-8 w-full flex justify-center items-center text-center'>{title}</h1>
-            <div className={`h-screen flex items-center justify-center`}>
+        <div className={`h-screen flex flex-col items-center justify-start ${fondo} bg-cover bg-center object-bottom-right gap-40`}>
+            <h1 className='font-black text-4xl md:text-7xl xl:text-7xl text-nowrap text-neonblue  w-full flex justify-center items-center text-center'>{title}</h1>
+            <div className={`h-fit flex items-center justify-center`}>
                 <div className="flex flex-col justify-between">
-                    <div className="relative flex justify-center -mt-80">
+                    <div className="relative flex justify-center">
                         <motion.div
                             initial={{ x: x, y: y, scale: 1, rotate: -10 }}
                             whileHover={{ scale: 1.1, x: xTrans }}

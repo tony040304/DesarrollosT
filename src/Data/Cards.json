@@ -1,0 +1,58 @@
+{
+  "cardComm": [
+    {
+      "name": "Ilustraciones únicas",
+      "icon": "Pencil"
+    },
+    {
+      "name": "Expertos en meta adds",
+      "icon": "MetaLogo"
+    },
+    {
+      "name": "Planificación estratégica",
+      "icon": "CalendarDots"
+    }
+  ],
+  "cardWeb": [
+    {
+      "name": "Diseño personalizado",
+      "icon": "Brush"
+    },
+    {
+      "name": "Optimización SEO",
+      "icon": "Seo"
+    },
+    {
+      "name": "Programadores profesionales",
+      "icon": "React"
+    }
+  ],
+  "cardFoto": [
+    {
+      "name": "Edición profesional",
+      "icon": "Scissors"
+    },
+    {
+      "name": "Equipo de alta gama",
+      "icon": "Camera"
+    },
+    {
+      "name": "Creatividad sin límites",
+      "icon": "Lightbulb"
+    }
+  ],
+  "cardIdentidad": [
+    {
+      "name": "Diseño único",
+      "icon": "Brush"
+    },
+    {
+      "name": "Identidad visual",
+      "icon": "Id"
+    },
+    {
+      "name": "Creatividad sin límites",
+      "icon": "Lightbulb"
+    }
+  ]
+}
