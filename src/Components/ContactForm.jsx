@@ -39,7 +39,7 @@ const ContactForm = () => {
         <div className="w-full flex justify-center items-center">
             <form
                 onSubmit={handleSubmit}
-                className="w-full max-w-xl backdrop-blur-md rounded-2xl flex flex-col gap-4"
+                className="w-full max-w-xl rounded-2xl flex flex-col  gap-4"
             >
                 <h2 className="text-3xl font-black text-white">Contacto</h2>
 
@@ -70,12 +70,14 @@ const ContactForm = () => {
                     className="w-full p-3 rounded-lg bg-black/40 text-white border border-white/10 focus:outline-none focus:border-neonblue resize-none"
                 />
 
-                <button
-                    type="submit"
-                    className="bg-neon text-white font-bold py-3 rounded-lg hover:scale-105 hover:shadow-lightblue hover:shadow-md transition-transform shadow-lg"
-                >
-                    Enviar mensaje
-                </button>
+                <div className="flex justify-center-safe items-center">
+                    <button
+                        type="submit"
+                        className="bg-neonblue cursor-pointer text-white font-bold p-3 w-fit rounded-lg hover:scale-105 hover:shadow-md transition-transform shadow-lg"
+                    >
+                        Enviar mensaje
+                    </button>
+                </div>
             </form>
         </div>
     );

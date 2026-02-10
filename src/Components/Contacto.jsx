@@ -9,18 +9,18 @@ const Contacto = () => {
     };
 
     return (
-        <div className='w-full h-screen flex bg-white bg-center text-white flex-col items-center'>
+        <div className={`w-full h-screen flex bg-[url('/azul.png')] bg-center bg-cover text-white flex-col items-center`}>
             <div className='w-full flex justify-center items-start pt-30'>
-                <h1 className='text-6xl text-neon'>Contacto</h1>
+                <h1 className='text-6xl text-white'>Contacto</h1>
             </div>
-            <div className='w-5/6 lg:w-1/2 flex items-center justify-center bg-neonblue mt-10 p-5 rounded-2xl'>
+            <div className='w-5/6 lg:w-1/3 flex items-center justify-center bg-gray-300/30 backdrop-blur-sm mt-10 p-2 rounded-2xl'>
                 <ContactForm />
             </div>
             <div className='w-full flex flex-col justify-center items-center pt-20 px-10 md:px-40 lg:px-60 pb-10'>
-                <h2 className='text-4xl text-neon'>Redes sociales</h2>
+                <h2 className='text-4xl text-white'>Redes sociales</h2>
                 <div className='flex flex-col justify-between w-full pt-4'>
-                    <div className='flex flex-col justify-center items-center mb-10'>
-                        <h3 className='text-neonblue text-3xl mb-2'>Innovanto</h3>
+                    <div className='flex flex-col justify-center items-center'>
+                        <h3 className='text-white text-3xl mb-2'>Innovanto</h3>
                         <div className='flex flex-row justify-between gap-8'>
                             <InstagramLogo ig="innovanto.dg" />
                             <button
@@ -33,11 +33,11 @@ const Contacto = () => {
                     </div>
                     <div className='flex flex-row justify-center gap-8'>
                         <div className='flex flex-col items-center justify-center'>
-                            <h1 className='text-2xl text-neonblue'>Antonella</h1>
+                            <h1 className='text-2xl text-white'>Antonella</h1>
                             <InstagramLogo ig="_antodelgado_" />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
-                            <h1 className='text-2xl text-neonblue'>Antonio</h1>
+                            <h1 className='text-2xl text-white'>Antonio</h1>
                             <InstagramLogo ig="antoniotorralbaa" />
                         </div>
                     </div>
