@@ -11,7 +11,7 @@ const Welcome = () => {
           <img src="/Logo.png" alt="Innovanto" className='w-5/6 md:w-2/3 lg:w-1/2' />
         </div>
         <div className="flex flex-col h-fit p-4">
-          <div className='flex flex-col items-center justify-center bg-[#081321] p-16 rounded-4xl'>
+          <div className='flex flex-col items-center justify-center bg-[#081321] p-10 lg:p-16 rounded-4xl'>
             <h1 className="text-4xl text-center font-bold italic mb-4 xl:w-3xl xl:text-2xl 2xl:text-4xl 2xl:text-nowrap">
               Impulsamos tu crecimiento digital.
             </h1>
