@@ -10,17 +10,17 @@ const Contacto = () => {
 
     return (
         <div className={`w-full h-screen flex bg-[url('/azul.png')] bg-center bg-cover text-white flex-col items-center`}>
-            <div className='w-full flex justify-center items-start pt-30'>
+            <div className='w-full flex justify-center items-start pt-20'>
                 <h1 className='text-6xl text-white'>Contacto</h1>
             </div>
             <div className='w-5/6 lg:w-1/3 flex items-center justify-center bg-gray-300/30 backdrop-blur-sm mt-10 p-2 rounded-2xl'>
                 <ContactForm />
             </div>
-            <div className='w-full flex flex-col justify-center items-center pt-20 px-10 md:px-40 lg:px-60 pb-10'>
+            <div className='w-full flex flex-col justify-center items-center px-10 md:mt-12'>
                 <h2 className='text-4xl text-white'>Redes sociales</h2>
-                <div className='flex flex-col justify-between w-full pt-4'>
-                    <div className='flex flex-col justify-center items-center'>
-                        <h3 className='text-white text-3xl mb-2'>Innovanto</h3>
+                <div className='flex flex-col justify-between w-full'>
+                    <div className='flex flex-col justify-center items-center md:mb-8'>
+                        <h3 className='text-white text-3xl'>Innovanto</h3>
                         <div className='flex flex-row justify-between gap-8'>
                             <InstagramLogo ig="innovanto.dg" />
                             <button
