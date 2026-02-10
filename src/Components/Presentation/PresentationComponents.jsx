@@ -4,6 +4,7 @@ import Info from '../Info/Info';
 
 const PresentationComponents = ({ title, paragraph, extra, info, where }) => {
   const { scrollToSection } = useIdSection();
+  const [clamped, setClamped] = React.useState(true);
 
 
   return (
@@ -14,7 +15,7 @@ const PresentationComponents = ({ title, paragraph, extra, info, where }) => {
           <Info info={info} />
         </div>
         <div className='p-2 flex flex-row '>
-          <p className='text-blue-900 text-sm 2xl:text-base line-clamp-4 lg:line-clamp-5 xl:line-clamp-none'>{paragraph} <span className='italic font-medium'>{extra}</span><a onClick={() => scrollToSection(where)} className='cursor-pointer font-bold'>Ver mas</a></p>
+          <p className={`text-blue-900 text-sm 2xl:text-base ${clamped ? 'line-clamp-4' : 'line-clamp-none'} lg:line-clamp-5 xl:line-clamp-none`} onClick={() => setClamped(!clamped)}>{paragraph} <span className='italic font-medium'>{extra}</span><a onClick={() => scrollToSection(where)} className='cursor-pointer font-bold'>Ver mas</a></p>
         </div>
       </div>
     </>
