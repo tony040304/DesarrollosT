@@ -26,7 +26,7 @@ const Welcome = () => {
               >
                 WhatsApp
               </button>
-              <InstagramLogo />
+              <InstagramLogo ig={'innovanto.dg'} />
             </div>
           </div>
         </div>
