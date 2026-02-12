@@ -33,6 +33,10 @@ const ContactForm = () => {
         )}&body=${encodeURIComponent(cuerpo)}`;
 
         window.location.href = mailtoLink;
+
+        fbq('track', 'Lead', {
+            content_name: 'Formulario Landing'
+        });
     };
 
     return (

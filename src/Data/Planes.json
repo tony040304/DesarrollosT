@@ -5,12 +5,12 @@
       "precio": 250,
       "descripcion": "Ideal para marcas que necesitan contenido visual profesional para redes sociales y web.",
       "actividades": [
-        "Sesión fotográfica (hasta 1 hora)",
-        "10 fotos editadas en alta calidad",
-        "1 video corto (hasta 30 segundos)",
-        "Edición básica de color y luz",
-        "Entrega digital del material",
-        "Asesoramiento de poses y encuadre"
+        "-Sesión fotográfica (hasta 1 hora)",
+        "-10 fotos editadas en alta calidad",
+        "-1 video corto (hasta 30 segundos)",
+        "-Edición básica de color y luz",
+        "-Entrega digital del material",
+        "-Asesoramiento de poses y encuadre"
       ]
     },
     {
@@ -19,11 +19,11 @@
       "descripcion": "Pensado para negocios que quieren contenido constante y de alto impacto visual.",
       "incluye": "+ Plan Foto + Video Básico",
       "actividades": [
-        "Sesión extendida (hasta 2 horas)",
-        "25 fotos editadas en alta calidad",
-        "2 videos para redes (Reels / Shorts)",
-        "Edición de video cuidada",
-        "(ritmo, cortes, música y textos)",
+        "-Sesión extendida (hasta 2 horas)",
+        "-25 fotos editadas en alta calidad",
+        "-2 videos para redes (Reels / Shorts)",
+        "-Edición de video cuidada",
+        "-(ritmo, cortes, música y textos)",
         "-Edición de color y luz avanzada",
         "-Dirección básica de escena y poses",
         "-Entrega digital del material"
@@ -35,7 +35,7 @@
       "descripcion": "Solución completa para marcas que buscan contenido de alto nivel, storytelling y presencia fuerte en redes.",
       "incluye": "+ Plan Profesional",
       "actividades": [
-        "Jornada completa de producción",
+        "-Jornada completa de producción",
         "-30 fotos editadas profesionalmente",
         "-3 a 4 videos para reels o publicidad",
         "-Edición profesional de video",
@@ -51,14 +51,14 @@
       "precio": 300,
       "descripcion": "Ideal para negocios que necesitan una web profesional, rápida de implementar y fácil de administrar.",
       "actividades": [
-        "Diseño visual personalizado",
-        "Implementación en WordPress",
-        "Hasta 5 secciones (Inicio, Servicios, Nosotros, Contacto, etc.)",
-        "Diseño responsive (mobile y desktop)",
-        "Formulario de contacto",
-        "Optimización básica de velocidad",
-        "SEO básico",
-        "Capacitación para autogestión"
+        "-Diseño visual personalizado",
+        "-Implementación en WordPress",
+        "-Hasta 5 secciones (Inicio, Servicios, Nosotros, Contacto, etc.)",
+        "-Diseño responsive (mobile y desktop)",
+        "-Formulario de contacto",
+        "-Optimización básica de velocidad",
+        "-SEO básico",
+        "-Capacitación para autogestión"
       ]
     },
     {
@@ -67,12 +67,12 @@
       "descripcion": "Para marcas que buscan una experiencia moderna, visualmente impactante y de alto rendimiento.",
       "incluye": "",
       "actividades": [
-        "Desarrollo con React",
-        "Maquetado con TailwindCSS",
-        "Animaciones con Framer Motion",
-        "Transiciones y microinteracciones",
-        "Código optimizado y escalable",
-        "Deploy en hosting"
+        "-Desarrollo con React",
+        "-Maquetado con TailwindCSS",
+        "-Animaciones con Framer Motion",
+        "-Transiciones y microinteracciones",
+        "-Código optimizado y escalable",
+        "-Deploy en hosting"
       ]
     },
     {
@@ -81,16 +81,16 @@
       "descripcion": "Solución completa para empresas que necesitan vender sus productos en linea con funcionalidades avanzadas.",
       "incluye": "",
       "actividades": [
-        "WooCommerce o desarrollo a medida",
-        "Panel administrador",
-        "Conexión a base de datos",
-        "Roles y permisos",
-        "Funcionalidades a medida según negocio",
-        "Documentación técnica",
-        "Soporte post-lanzamiento",
-        "Deploy en hosting",
-        "Mucho mas...",
-        "Pedir reunion para cotización personalizada"
+        "-WooCommerce o desarrollo a medida",
+        "-Panel administrador",
+        "-Conexión a base de datos",
+        "-Roles y permisos",
+        "-Funcionalidades a medida según negocio",
+        "-Documentación técnica",
+        "-Soporte post-lanzamiento",
+        "-Deploy en hosting",
+        "-Mucho mas...",
+        "-Pedir reunion para cotización personalizada"
       ]
     }
   ],
@@ -150,12 +150,12 @@
       "precio": 200,
       "descripcion": "Ideal para marcas que están empezando y necesitan una identidad visual clara y profesional.",
       "actividades": [
-        "Diseño de logotipo principal",
-        "Paleta de colores",
-        "Tipografías corporativas",
-        "Versiones del logo (horizontal, vertical, isotipo)",
-        "Aplicaciones básicas (perfil de redes, firma de mail)",
-        "Entrega de archivos en alta calidad"
+        "-Diseño de logotipo principal",
+        "-Paleta de colores",
+        "-Tipografías corporativas",
+        "-Versiones del logo (horizontal, vertical, isotipo)",
+        "-Aplicaciones básicas (perfil de redes, firma de mail)",
+        "-Entrega de archivos en alta calidad"
       ]
     },
     {
@@ -164,12 +164,12 @@
       "descripcion": "Pensado para marcas que buscan coherencia visual, posicionamiento y una identidad sólida.",
       "incluye": "+ Plan Identidad Esencial",
       "actividades": [
-        "Manual de marca (brandbook)",
-        "Aplicaciones avanzadas (flyer, tarjeta, portada, etc.)",
-        "Sistema visual para redes sociales",
-        "Mockups de presentación",
-        "Lineamientos de uso de marca",
-        "Entrega organizada por formatos"
+        "-Manual de marca (brandbook)",
+        "-Aplicaciones avanzadas (flyer, tarjeta, portada, etc.)",
+        "-Sistema visual para redes sociales",
+        "-Mockups de presentación",
+        "-Lineamientos de uso de marca",
+        "-Entrega organizada por formatos"
       ]
     }
   ]

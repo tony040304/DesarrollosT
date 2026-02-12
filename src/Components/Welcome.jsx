@@ -4,6 +4,13 @@ import { SlArrowDown } from "react-icons/sl";
 
 const Welcome = () => {
 
+  const GoWhats = () => {
+    window.open('https://wa.me/5493416465444', '_blank');
+    fbq('track', 'Contact', {
+      method: 'WhatsApp'
+    });
+  }
+
   return (
     <div className="h-screen w-full flex flex-col bg-[url('/verde.png')] items-center justify-between text-white">
       <div className="flex flex-col h-screen justify-center items-center gap-2 xl:flex-row xl:gap-4">

@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Info from './Info/Info'
 
 const PlanMap = ({ planes, bg, text, button, w, click }) => {
+
+    const servicio = planes.map(plan => plan.nombre).join(', ');
+
+
+    useEffect(() => {
+        fbq('track', 'ViewContent', {
+            content_name: servicio
+        });
+    }, []);
+
     return (
         <div className='flex flex-col h-full lg:flex-row gap-8 lg:gap-10 p-4 lg:pt-12 w-full md:h-fit justify-center items-center lg:items-stretch'>
             {
@@ -13,12 +23,12 @@ const PlanMap = ({ planes, bg, text, button, w, click }) => {
                         viewport={{ once: true }}
                         exit={{ opacity: 0, y: 50 }}
                         transition={{ duration: 0.5, delay: index * 0.2 }}
-                        className={`flex flex-col border-2 border-black/10 rounded-2xl hover:shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl/20 h-fit w-5/6 lg:w-1/4 ${w}`} key={index}>
-                        <div className='border-b-4 border-white flex flex-row justify-center items-center z-10 shadow-md'>
+                        className={`flex flex-col border-2 border-black/10 rounded-2xl hover:shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl/20 h-fit w-5/6 lg:w-1/3 `} key={index}>
+                        <div className=' flex flex-row justify-center items-center'>
                             <Info text={text} info={plan.descripcion} />
                             <h1 className='font-bold text-2xl text-neonblue p-4'>{plan.nombre}</h1>
                         </div>
-                        <div className={`flex flex-col justify-start p-4 pl-0 bg-neutral-100 rounded-b-2xl z-5`}>
+                        <div className={`border-t-4 border-white shadow-md flex flex-col justify-start p-4 pl-0 bg-neutral-100 rounded-b-2xl z-0`}>
                             <div className='text-sm md:text-lg lg:text-sm text-nowrap flex flex-col items-start justify-start p-2 w-fit'>
                                 <div>
                                     <h2 className={`p-2 text-xl font-bold ${text}`}>{plan.incluye}</h2>

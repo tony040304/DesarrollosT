@@ -5,6 +5,9 @@ const InstagramLogo = ({ ig }) => {
 
     const GoIg = () => {
         window.open(`https://www.instagram.com/${ig}/`, "_blank");
+        fbq('track', 'OutboundClick', {
+            destination: 'Instagram'
+        });
     };
     return (
         <button

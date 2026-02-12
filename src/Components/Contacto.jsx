@@ -6,6 +6,9 @@ const Contacto = () => {
 
     const GoWhats = () => {
         window.open("https://api.whatsapp.com/send?phone=3416465444", "_blank");
+        fbq('track', 'Contact', {
+            method: 'WhatsApp'
+        });
     };
 
     return (
