@@ -4,13 +4,13 @@ import { cardComm } from '../../Data/Cards.json'
 import IconRenderer from './IconRenderer'
 import PlanMap from '../PlanMap'
 
-const PreviousCard = ({ click, planes, title, card, fondo }) => {
+const PreviousCard = ({ click, planes, title, card }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className={`${!isOpen ? 'h-screen' : 'h-fit'} lg:h-screen w-full flex flex-col justify-start items-center ${fondo} bg-cover `}>
+        <div className={`${!isOpen ? 'h-screen' : 'h-fit'} lg:h-screen w-full flex flex-col justify-start items-center bg-cover `}>
             <h1 className='font-black text-4xl md:text-7xl xl:text-7xl text-wrap text-black p-2 text-center mt-22'>{title}</h1>
-            <div className={`flex justify-center items-center h-fit ${!isOpen ? 'h-screen' : 'h-fit'}`}>
+            <div className={`flex justify-center items-center ${!isOpen ? 'h-screen' : 'h-fit'}`}>
                 {!isOpen ?
                     (
                         <div className='shadow-lg/30 rounded-xl bg-neutral-100 backdrop-blur-md p-6 gap-6 flex-row inset-shadow-2xs mx-4 md:mx-0 grid grid-cols-2 md:grid-cols-4'>

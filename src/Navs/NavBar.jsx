@@ -18,7 +18,6 @@ const menuVariants = {
 const NavBar = ({ visible }) => {
   const [NavOpen, setNavOpen] = useState(false)
   const [scrollY, setScrollY] = React.useState(0)
-  const { handleScrollTo } = setScroll();
 
   useEffect(() => {
     const handleScroll = () => {
