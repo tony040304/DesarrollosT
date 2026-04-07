@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 import SvgCard from './SvgCard'
-import { cardComm } from '../Data/Cards.json'
+import { cardComm } from '../../Data/Cards.json'
 import IconRenderer from './IconRenderer'
-import PlanMap from '../Components/PlanMap'
+import PlanMap from '../PlanMap'
 
 const PreviousCard = ({ click, planes, title, card, fondo }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div className={`${!isOpen ? 'h-screen' : 'h-fit'} lg:h-screen w-full flex flex-col justify-start items-center ${fondo} bg-cover `}>
-            <h1 className='font-black text-4xl md:text-7xl xl:text-7xl text-wrap text-black p-2 text-center mt-16'>{title}</h1>
+            <h1 className='font-black text-4xl md:text-7xl xl:text-7xl text-wrap text-black p-2 text-center mt-22'>{title}</h1>
             <div className={`flex justify-center items-center h-fit ${!isOpen ? 'h-screen' : 'h-fit'}`}>
                 {!isOpen ?
                     (

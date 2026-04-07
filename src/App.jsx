@@ -1,14 +1,12 @@
-import react, { lazy, Suspense } from 'react'
+import react, { lazy, Suspense, useEffect } from 'react'
 import './App.css'
 import ButtonTop from './Components/ButtonTop'
 import Proyects from './Components/Proyects'
 import ProyectsPhone from './Components/ProyectsPhone'
+import Valores from './Components/Valores'
 import Plans from './Components/Plans'
-import { planesFoto, planesRedes, planesWeb, planesIdentidad } from './Data/Planes'
-import { cardComm, cardWeb, cardFoto, cardIdentidad } from './Data/Cards.json'
-import Planes2 from './Components/Planes2'
 import Contacto from './Components/Contacto'
-import PreviousCard from './Card/PreviousCard'
+import Lenis from "@studio-freight/lenis";
 
 const LazyWelcome = lazy(() => import('./Components/Welcome'))
 const LazyPresentation = lazy(() => import("./Components/Presentation/Presentation"))
@@ -25,9 +23,29 @@ const handleProyectClick = (url) => {
   window.open(url, '_blank');
 }
 
-
 function App() {
 
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: 0.08,
+      duration: 1.3,
+      smoothWheel: true,
+      smoothTouch: false,
+    });
+    let rafId;
+
+    const raf = (time) => {
+      lenis.raf(time);
+      rafId = requestAnimationFrame(raf);
+    };
+
+    rafId = requestAnimationFrame(raf);
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      lenis.destroy();
+    };
+  }, []);
 
   return (
     <>
@@ -35,15 +53,8 @@ function App() {
         <LazyWelcome />
         <section id='inicio' />
         <LazyPresentation />
-        <section id='servicios' />
-        <PreviousCard title={'Community manager'} card={cardComm} planes={planesRedes} click={() => handleMessage('Community Manager')} fondo={`bg-[url('/blancoAzul.png')] bg-center-left`} />
-        <section id='web' />
-        <PreviousCard title={'Desarrollo de aplicaciones web'} card={cardWeb} planes={planesWeb} click={() => handleMessage('Desarrollo de aplicaciones web')} fondo={`bg-[url('/blanco.png')]`} />
-        <section id='foto' />
-        <PreviousCard click={() => handleMessage('Fotografía y Video')} card={cardFoto} planes={planesFoto} title="Fotografía y Video" fondo={`bg-[url('/blancoAzul.png')] bg-center-right`} />
-        <section id='identidad' />
-        <PreviousCard title={'Desarrollo de identidad visual'} card={cardIdentidad} click={() => handleMessage('Desarrollo de identidad visual')} planes={planesIdentidad} fondo={`bg-[url('/blanco.png')]`} />
-        <section id='proyectos' />
+        <section id='valores' />
+        <Valores />
         <div className='w-full bg-cover bg-center'>
           <div className='hidden md:block'>
             <Proyects title={"Proyectos"} urlImg1="/optica.png" urlImg2="/optica.png" x={-100} x1={100} fondo={`bg-[url('/blancoAzul.png')]`} />

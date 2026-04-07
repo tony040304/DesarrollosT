@@ -43,16 +43,16 @@
   ],
   "cardIdentidad": [
     {
-      "name": "Diseño único",
-      "icon": "Brush"
+      "name": "Edicion profesional",
+      "icon": "Scissors"
     },
     {
-      "name": "Identidad visual",
-      "icon": "Id"
+      "name": "Videos en alta calidad",
+      "icon": "FourK"
     },
     {
-      "name": "Creatividad sin límites",
-      "icon": "Lightbulb"
+      "name": "Colores y efectos cinematográficos",
+      "icon": "Fire"
     }
   ]
 }

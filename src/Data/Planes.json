@@ -97,33 +97,33 @@
   "planesRedes": [
     {
       "nombre": "PLAN 1 · Base",
-      "precio": 150,
+      "precio": 250,
       "descripcion": "Ideal para emprendedores que quieren empezar a tener presencia profesional en redes sociales.",
       "actividades": [
-        "-Estrategia inicial y orden del perfil",
-        "-Calendario mensual de contenidos",
-        "-Redacción de copys",
-        "-Reels con edición básica",
-        "-Fotos simples pensadas para redes",
-        "-Publicación y gestión de contenido",
-        "-8 posteos mensuales",
-        "-2 historias por semana",
-        "-Análisis básico de resultados"
+        "2 Reels mensuales",
+        "6 Posts mensuales",
+        "4 anuncios mensuales",
+        "Historias diarias",
+        "2 Fotos nuevas para las historias por mes",
+        "Guiones de reels",
+        "Análisis de contenido mensual",
+        "Optimización mensual de contenido",
+        "Edición cinematográfica de foto y video",
+        "Planificación mensual de contenido y anuncios",
+        "Presupuesto para anuncios = $50 usd"
       ]
     },
     {
       "nombre": "PLAN 2 · Avanzado",
-      "precio": 250,
+      "precio": 350,
       "descripcion": "Para marcas que buscan aumentar su visibilidad y engagement.",
       "incluye": "+ Plan 1",
       "actividades": [
-        "-Auditoría más profunda y lineamientos claros de comunicación",
-        "-Grabación de reels con mejor planificación",
-        "-Edición de video más cuidada (mejor ritmo, cortes, textos y música)",
-        "-Fotos más profesionales (mejor luz, encuadre y estética)",
-        "-10 posteos mensuales",
-        "-3 historias por semana",
-        "-Análisis orientado a optimizar crecimiento"
+        "4 Reels mensuales",
+        "10 Posts mensuales",
+        "6 anuncios mensuales",
+        "Historias diarias",
+        "Presupuesto para anuncios = $65 usd"
       ]
     },
     {
@@ -132,15 +132,13 @@
       "descripcion": "Pensado para marcas que quieren delegar completamente sus redes y trabajar el posicionamiento en serio.",
       "incluye": "+ Plan 2",
       "actividades": [
-        "-Estrategia integral de contenidos y posicionamiento",
-        "-Definición de identidad visual y narrativa",
-        "-Calendario estratégico mensual",
-        "-Grabación y edición profesional de reels",
-        "-Sesión de fotos profesional mensual",
-        "-12 a 16 posteos mensuales",
-        "-Historias activas de lunes a viernes",
-        "-Gestión de comunidad (mensajes y comentarios)",
-        "-Análisis de métricas + reunión mensual"
+        "2 Reels semanales",
+        "3 Posts semanales",
+        "10 anuncios mensuales",
+        "Grabación y edición profesional de reels",
+        "Sesión de fotos profesional mensual",
+        "Gestión de comunidad (mensajes y comentarios)",
+        "Presupuesto para anuncios = $80 usd"
       ]
     }
   ],

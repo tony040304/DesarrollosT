@@ -1,7 +1,9 @@
-import { MetaLogoIcon, PencilIcon, CalendarDotsIcon, SpeedometerIcon, PaintBrushIcon, AtomIcon, ScissorsIcon, CameraIcon, LightbulbIcon, IdentificationBadgeIcon } from "@phosphor-icons/react";
+import { MetaLogoIcon, FireIcon, FourKIcon, PencilIcon, CalendarDotsIcon, SpeedometerIcon, PaintBrushIcon, AtomIcon, ScissorsIcon, CameraIcon, LightbulbIcon, IdentificationBadgeIcon } from "@phosphor-icons/react";
 
 const iconMap = {
     MetaLogo: MetaLogoIcon,
+    Fire: FireIcon,
+    FourK: FourKIcon,
     CalendarDots: CalendarDotsIcon,
     Pencil: PencilIcon,
     Seo: SpeedometerIcon,

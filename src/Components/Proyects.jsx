@@ -28,7 +28,7 @@ const Proyects = ({ urlImg1, urlImg2, urlImg3, x, x1, y = 0, xTrans = -250, x1tr
                             initial={{ x: x1, y: 0, scale: 1, rotate: 10 }}
                             whileHover={{ scale: 1.1, x: x1trans }}
                             transition={{ type: "spring" }}
-                            className={`rounded-2xl shadow-lg border ${size} absolute bg-neon cursor-pointer z-10`}
+                            className={`rounded-2xl shadow-lg border border-black/20 ${size} absolute bg-neon cursor-pointer z-10`}
                         >
                             <img
                                 src={`${urlImg2}`}
