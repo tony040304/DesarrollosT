@@ -19,7 +19,7 @@ const Contacto = () => {
             <div className='w-5/6 lg:w-1/3 flex items-center justify-center bg-gray-300/30 backdrop-blur-sm mt-10 p-2 rounded-2xl'>
                 <ContactForm />
             </div>
-            <div className='w-full flex flex-col justify-center items-center px-10 md:mt-12'>
+            {/* <div className='w-full flex flex-col justify-center items-center px-10 md:mt-12'>
                 <h2 className='text-4xl text-white'>Redes sociales</h2>
                 <div className='flex flex-col justify-between w-full'>
                     <div className='flex flex-col justify-center items-center md:mb-8'>
@@ -45,7 +45,7 @@ const Contacto = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

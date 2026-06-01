@@ -23,8 +23,7 @@ const Welcome = () => {
               Impulsamos tu crecimiento digital.
             </h1>
             <p className="text-sm md:text-base leading-relaxed xl:w-3xl">
-              En Innovanto te ayudamos a dar el salto al mundo digital con soluciones adaptadas a tu negocio. Desde páginas web y gestión de redes sociales hasta software
-              a medida y contenido visual, trabajamos para que tu marca crezca y se consolide en un mercado cada vez más competitivo.
+              En Innovanto te ayudamos a dar el salto al <strong>mundo digital</strong> con soluciones adaptadas a tu negocio. Desde <strong>Gestión de redes sociales</strong>, <strong>contenido audiovisual</strong> hasta <strong>páginas web</strong>, trabajamos para que <strong>tu marca crezca y se consolide</strong> en un mercado cada vez más competitivo.
             </p>
             <div className='flex flex-row gap-4 justify-center w-full mt-4'>
               <button
@@ -40,7 +39,7 @@ const Welcome = () => {
       </div>
       <div onClick={() => { document.getElementById("presentation")?.scrollIntoView({ behavior: 'smooth' }); }}
         className="flex flex-col items-center justify-center transform cursor-pointer">
-        <h3 className=" mb-1 text-sm md:text-base">Saber más</h3>
+        <h3 className=" mb-1 text-sm md:text-base">Ver más</h3>
         <SlArrowDown className="animate-bounce text-xl md:text-2xl " />
       </div>
     </div>

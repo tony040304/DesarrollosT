@@ -14,13 +14,6 @@ const Presentation = () => {
       >
 
         <div className="relative z-10 w-full flex flex-col items-center">
-          <PresentationComponents
-            title="Pagina web"
-            paragraph="Creamos páginas web 100% personalizadas, originales y funcionales, diseñadas para mostrar tus productos o servicios de manera atractiva y captar nuevos clientes. Nuestro objetivo es que tu sitio sea una verdadera herramienta de crecimiento para tu negocio."
-            extra=""
-            info=""
-            where={'web'}
-          />
 
           <PresentationComponents
             title="Community manager"
@@ -37,9 +30,16 @@ const Presentation = () => {
           />
           <PresentationComponents
             title="Edicion de video"
-            paragraph="Ofrecemos servicios de edición de video profesional para mejorar la calidad y el impacto de tu contenido visual. Transformamos tus grabaciones en videos atractivos y efectivos que capturan la atención de tu audiencia y transmiten tu mensaje de manera clara y memorable."
+            paragraph="Nos encargamos de la edición profesional de tus videos para que dejes de perder horas frente al software y te enfoques en lo que mejor sabes hacer: crear. Transformamos tu material en bruto en contenido dinámico, con ritmo y con ganchos perfectos que dispararán tu tiempo de reproducción y mantendrán a tus suscriptores pegados a la pantalla."
             info=""
             where={'identidad'}
+          />
+          <PresentationComponents
+            title="Pagina web"
+            paragraph="Creamos páginas web 100% personalizadas, originales y funcionales, diseñadas para mostrar tus productos o servicios de manera atractiva y captar nuevos clientes. Nuestro objetivo es que tu sitio sea una verdadera herramienta de crecimiento para tu negocio."
+            extra=""
+            info=""
+            where={'web'}
           />
         </div>
       </section>

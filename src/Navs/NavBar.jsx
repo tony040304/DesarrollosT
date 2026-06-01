@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'motion/react';
 import { SlMenu } from "react-icons/sl";
 import setScroll from '../Components/Hook/setScroll';
+import { useNavigate } from 'react-router-dom';
 
 const menuVariants = {
   hidden: { x: "100%" },
@@ -18,6 +19,7 @@ const menuVariants = {
 const NavBar = ({ visible }) => {
   const [NavOpen, setNavOpen] = useState(false)
   const [scrollY, setScrollY] = React.useState(0)
+  const Nav = useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,11 +45,12 @@ const NavBar = ({ visible }) => {
               <motion.div className='w-20 cursor-pointer'
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}>
-                <img src="/LogoAzul.png" alt="Logo" /></motion.div>
+                transition={{ duration: 0.5 }}
+              >
+                <img src="/LogoAzul.png" alt="Logo" onClick={() => Nav("/")} /></motion.div>
               <div className='md:block hidden font-bold text-2xl text-neonblue'>
                 <div className='flex flex-row gap-x-10'>
-                  <ul className='cursor-pointer' onClick={() => scrollToSection("inicio")}>Inicio</ul>
+                  <ul className='cursor-pointer' onClick={() => Nav("/")}>Inicio</ul>
                   <ul className='cursor-pointer' onClick={() => scrollToSection("servicios")}>Servicios</ul>
                   <ul className='cursor-pointer' onClick={() => scrollToSection("proyectos")}>Proyectos</ul>
                   <ul className='cursor-pointer' onClick={() => scrollToSection("contacto")}>Contacto</ul>
@@ -82,7 +85,7 @@ const NavBar = ({ visible }) => {
                 <SlMenu onClick={() => setNavOpen(!NavOpen)} className='text-blue-950 cursor-pointer' />
               </div>
             </div>
-          </nav>
+          </nav >
         )}
     </>
   )

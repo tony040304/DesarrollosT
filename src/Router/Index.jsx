@@ -4,6 +4,7 @@ import { lazy, Suspense } from "react";
 import App from "../App";
 import NotFound from "./NotFound";
 import PlanComponents from "../Components/Plans/PlanComponents";
+import PlanCustom from "../Components/Plans/PlanCustom";
 
 export const router = createBrowserRouter([
     {
@@ -14,6 +15,11 @@ export const router = createBrowserRouter([
     {
         path: "/Plan",
         element: <Suspense fallback={<p>Cargando...</p>}><PlanComponents /></Suspense>,
+        errorElement: <NotFound />
+    },
+    {
+        path: "/custom-plan",
+        element: <Suspense fallback={<p>Cargando...</p>}><PlanCustom /></Suspense>,
         errorElement: <NotFound />
     }
 ]);

@@ -97,48 +97,52 @@
   "planesRedes": [
     {
       "nombre": "PLAN 1 · Base",
-      "precio": 250,
+      "precio": 260,
       "descripcion": "Ideal para emprendedores que quieren empezar a tener presencia profesional en redes sociales.",
       "actividades": [
         "2 Reels mensuales",
         "6 Posts mensuales",
-        "4 anuncios mensuales",
-        "Historias diarias",
-        "2 Fotos nuevas para las historias por mes",
-        "Guiones de reels",
-        "Análisis de contenido mensual",
-        "Optimización mensual de contenido",
-        "Edición cinematográfica de foto y video",
-        "Planificación mensual de contenido y anuncios",
-        "Presupuesto para anuncios = $50 usd"
+        "1 anuncio mensual",
+        "-Historias diarias",
+        "-Guiones de reels",
+        "-Análisis de contenido mensual",
+        "-Optimización mensual de contenido",
+        "-Edición cinematográfica de foto y video",
+        "-Planificación mensual de contenido y anuncios"
       ]
     },
     {
       "nombre": "PLAN 2 · Avanzado",
-      "precio": 350,
+      "precio": 400,
       "descripcion": "Para marcas que buscan aumentar su visibilidad y engagement.",
-      "incluye": "+ Plan 1",
       "actividades": [
         "4 Reels mensuales",
         "10 Posts mensuales",
-        "6 anuncios mensuales",
-        "Historias diarias",
-        "Presupuesto para anuncios = $65 usd"
+        "3 anuncios mensuales",
+        "Presupuesto para anuncios = $50 usd",
+        "-Historias diarias",
+        "-Guiones de reels",
+        "-Análisis de contenido mensual",
+        "-Optimización mensual de contenido",
+        "-Edición cinematográfica de foto y video",
+        "-Planificación mensual de contenido y anuncios"
       ]
     },
     {
       "nombre": "PLAN 3 · Premium",
-      "precio": 550,
+      "precio": 560,
       "descripcion": "Pensado para marcas que quieren delegar completamente sus redes y trabajar el posicionamiento en serio.",
-      "incluye": "+ Plan 2",
       "actividades": [
-        "2 Reels semanales",
-        "3 Posts semanales",
-        "10 anuncios mensuales",
-        "Grabación y edición profesional de reels",
-        "Sesión de fotos profesional mensual",
-        "Gestión de comunidad (mensajes y comentarios)",
-        "Presupuesto para anuncios = $80 usd"
+        "8 Reels mensuales",
+        "12 Posts mensuales",
+        "5 anuncios mensuales",
+        "Presupuesto para anuncios = $80 usd",
+        "-Historias diarias",
+        "-Guiones de reels",
+        "-Análisis de contenido mensual",
+        "-Optimización mensual de contenido",
+        "-Edición cinematográfica de foto y video",
+        "-Planificación mensual de contenido y anuncios"
       ]
     }
   ],
