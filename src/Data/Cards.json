@@ -41,18 +41,18 @@
       "icon": "Lightbulb"
     }
   ],
-  "cardIdentidad": [
+  "cardEdicion": [
     {
-      "name": "Edicion profesional",
-      "icon": "Scissors"
+      "name": "Videos de Youtube",
+      "icon": "YouTube"
     },
     {
-      "name": "Videos en alta calidad",
+      "name": "Reels",
+      "icon": "Instagram"
+    },
+    {
+      "name": "Color grading",
       "icon": "FourK"
-    },
-    {
-      "name": "Colores y efectos cinematográficos",
-      "icon": "Fire"
     }
   ]
 }

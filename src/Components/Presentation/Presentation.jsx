@@ -19,27 +19,27 @@ const Presentation = () => {
             title="Community manager"
             paragraph="Gestionamos tus redes sociales con estrategias efectivas que fortalecen tu marca y generan interacción real con tu audiencia. Nos ocupamos de crear contenido atractivo, responder a tus clientes y potenciar tu presencia digital, para que puedas enfocarte en lo que realmente importa: tu negocio."
             info=""
-            where={'servicios'}
+            where={'PlanCM'}
           />
 
           <PresentationComponents
             title="Foto y video profesional"
             paragraph="Producimos contenido visual profesional para tus redes y página web, transmitiendo la esencia de tu marca y generando mayor impacto en tu comunicación digital."
             info=""
-            where={'foto'}
+            where={'PlanFoto'}
           />
           <PresentationComponents
             title="Edicion de video"
             paragraph="Nos encargamos de la edición profesional de tus videos para que dejes de perder horas frente al software y te enfoques en lo que mejor sabes hacer: crear. Transformamos tu material en bruto en contenido dinámico, con ritmo y con ganchos perfectos que dispararán tu tiempo de reproducción y mantendrán a tus suscriptores pegados a la pantalla."
             info=""
-            where={'identidad'}
+            where={'PlanEdicion'}
           />
           <PresentationComponents
             title="Pagina web"
             paragraph="Creamos páginas web 100% personalizadas, originales y funcionales, diseñadas para mostrar tus productos o servicios de manera atractiva y captar nuevos clientes. Nuestro objetivo es que tu sitio sea una verdadera herramienta de crecimiento para tu negocio."
             extra=""
             info=""
-            where={'web'}
+            where={'PlanWeb'}
           />
         </div>
       </section>

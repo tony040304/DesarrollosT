@@ -1,4 +1,4 @@
-import { MetaLogoIcon, FireIcon, FourKIcon, PencilIcon, CalendarDotsIcon, SpeedometerIcon, PaintBrushIcon, AtomIcon, ScissorsIcon, CameraIcon, LightbulbIcon, IdentificationBadgeIcon } from "@phosphor-icons/react";
+import { MetaLogoIcon, FireIcon, YoutubeLogoIcon, InstagramLogoIcon, FourKIcon, PencilIcon, CalendarDotsIcon, SpeedometerIcon, PaintBrushIcon, AtomIcon, ScissorsIcon, CameraIcon, LightbulbIcon, IdentificationBadgeIcon } from "@phosphor-icons/react";
 
 const iconMap = {
     MetaLogo: MetaLogoIcon,
@@ -12,7 +12,10 @@ const iconMap = {
     Scissors: ScissorsIcon,
     Camera: CameraIcon,
     Lightbulb: LightbulbIcon,
-    Id: IdentificationBadgeIcon
+    Id: IdentificationBadgeIcon,
+    YouTube: YoutubeLogoIcon,
+    Instagram: InstagramLogoIcon
+
 };
 
 function IconRenderer({ iconName }) {

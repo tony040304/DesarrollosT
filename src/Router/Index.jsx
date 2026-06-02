@@ -3,7 +3,10 @@ import Layout from "../Components/Layout";
 import { lazy, Suspense } from "react";
 import App from "../App";
 import NotFound from "./NotFound";
-import PlanComponents from "../Components/Plans/PlanComponents";
+import PlanCM from "../Components/Plans/PlansDivided/PlanCM";
+import PlanWeb from "../Components/Plans/PlansDivided/PlanWeb";
+import PlanEdicion from "../Components/Plans/PlansDivided/PlanEdicion";
+import PlanFoto from "../Components/Plans/PlansDivided/PlanFoto";
 import PlanCustom from "../Components/Plans/PlanCustom";
 
 export const router = createBrowserRouter([
@@ -13,8 +16,23 @@ export const router = createBrowserRouter([
         errorElement: <NotFound />
     },
     {
-        path: "/Plan",
-        element: <Suspense fallback={<p>Cargando...</p>}><PlanComponents /></Suspense>,
+        path: "/PlanCM",
+        element: <Suspense fallback={<p>Cargando...</p>}><PlanCM /></Suspense>,
+        errorElement: <NotFound />
+    },
+    {
+        path: "/PlanFoto",
+        element: <Suspense fallback={<p>Cargando...</p>}><PlanFoto /></Suspense>,
+        errorElement: <NotFound />
+    },
+    {
+        path: "/PlanEdicion",
+        element: <Suspense fallback={<p>Cargando...</p>}><PlanEdicion /></Suspense>,
+        errorElement: <NotFound />
+    },
+    {
+        path: "/PlanWeb",
+        element: <Suspense fallback={<p>Cargando...</p>}><PlanWeb /></Suspense>,
         errorElement: <NotFound />
     },
     {

@@ -40,7 +40,7 @@ const NavBar = ({ visible }) => {
     <>
       {
         window.scrollY > visible && (
-          <nav className='flex w-full h-20 bg-grayblue/50 backdrop-blur p-2 px-2 md:px-6 lg:px-12 xl:px-20 2xl:px-32 fixed top-0 left-0 z-50 shadow-md'>
+          <nav className='flex w-full h-20 bg-grayblue/80 backdrop-blur p-2 px-2 md:px-6 lg:px-12 xl:px-20 2xl:px-32 fixed top-0 left-0 z-50 shadow-md'>
             <div className='flex flex-row items-center justify-between w-full px-6'>
               <motion.div className='w-20 cursor-pointer'
                 initial={{ x: -100, opacity: 0 }}

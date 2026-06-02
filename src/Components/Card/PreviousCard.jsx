@@ -9,11 +9,11 @@ const PreviousCard = ({ click, planes, title, card }) => {
 
     return (
         <div className={`${!isOpen ? 'h-screen' : 'h-fit'} lg:h-screen w-full flex flex-col justify-start items-center bg-cover `}>
-            <h1 className='font-black text-4xl md:text-7xl xl:text-7xl text-wrap text-black p-2 text-center mt-22'>{title}</h1>
+            <h1 className='font-black text-4xl md:text-7xl xl:text-7xl text-wrap text-stone-300 p-2 text-center mt-22'>{title}</h1>
             <div className={`flex justify-center items-center ${!isOpen ? 'h-screen' : 'h-fit'}`}>
                 {!isOpen ?
                     (
-                        <div className='shadow-lg/30 rounded-xl bg-neutral-100 backdrop-blur-md p-6 gap-6 flex-row inset-shadow-2xs mx-4 md:mx-0 grid grid-cols-2 md:grid-cols-4'>
+                        <div className='shadow-lg/30 rounded-xl bg-stone-200 backdrop-blur-md p-6 gap-6 flex-row inset-shadow-2xs mx-4 md:mx-0 grid grid-cols-2 md:grid-cols-4'>
                             {card.map((card, index) => (
                                 <div className='flex flex-col items-start justify-start p-4 lg:col-span-2 bg-white shadow-lg/20 rounded-lg inset-shadow-2xs border-2 border-black/10 transform transition-transform hover:scale-102 hover:inset-shadow-sm/10 cursor-default' key={index}>
                                     <div className='w-full flex justify-center items-center'>

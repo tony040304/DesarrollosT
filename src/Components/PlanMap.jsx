@@ -26,11 +26,11 @@ const PlanMap = ({ planes, bg, text, button, w, click }) => {
                             exit={{ opacity: 0, y: 50 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                             className={`flex flex-col border-2 border-black/10 rounded-2xl hover:shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl/20 w-5/6 lg:w-1/3 `} key={index}>
-                            <div className=' flex flex-row justify-center items-center'>
+                            <div className='bg-stone-50 rounded-t-2xl flex flex-row justify-center items-center'>
                                 <Info text={text} info={plan.descripcion} />
                                 <h1 className='font-bold text-2xl text-neonblue p-4'>{plan.nombre}</h1>
                             </div>
-                            <div className={`border-t-4 border-white shadow-md flex flex-col justify-between p-4 pl-0 bg-neutral-100 rounded-b-2xl z-0 h-full`}>
+                            <div className={`border-t-4 border-white shadow-md flex flex-col justify-between p-4 pl-0 bg-stone-200 rounded-b-2xl z-0 h-full`}>
                                 <div className='text-sm md:text-lg lg:text-sm text-nowrap flex flex-col items-start justify-start p-2 w-fit'>
                                     <div>
                                         <h2 className={`p-2 text-xl font-bold ${text}`}>{plan.incluye}</h2>
