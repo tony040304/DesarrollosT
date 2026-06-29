@@ -9,7 +9,7 @@ const AnimacionBlur = ({ open, setOpen, click }) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="absolute inset-0 bg-black/60 flex items-center justify-center"
+                    className="absolute inset-0 bg-black/60 flex items-center justify-center rounded-xl"
                     onClick={() => setOpen(!open)}
                 >
                     <motion.button

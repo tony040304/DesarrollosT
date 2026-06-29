@@ -12,7 +12,7 @@ const Welcome = () => {
   }
 
   return (
-    <div className="h-screen w-full flex flex-col bg-[url('/verde.png')] items-center justify-between text-white">
+    <div className="h-screen w-full flex flex-col bg-[#07101D] items-center justify-between text-white">
       <div className="flex flex-col h-screen justify-center items-center gap-2 xl:flex-row xl:gap-4">
         <div className="w-full flex justify-center">
           <img src="/Logo.png" alt="Innovanto" className='w-5/6 md:w-2/3 lg:w-1/2' />

@@ -28,3 +28,4 @@ const DivChildren = ({ children }) => {
 
 export default SkillsH3;
 export { SkillsDiv, DivChildren };
+  

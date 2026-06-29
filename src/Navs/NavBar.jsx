@@ -21,17 +21,17 @@ const NavBar = ({ visible }) => {
   const [scrollY, setScrollY] = React.useState(0)
   const Nav = useNavigate()
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY)
-    }
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrollY(window.scrollY)
+  //   }
 
-    window.addEventListener('scroll', handleScroll)
+  //   window.addEventListener('scroll', handleScroll)
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  })
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll)
+  //   }
+  // })
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
     el?.scrollIntoView({ behavior: "smooth" });

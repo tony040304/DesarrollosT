@@ -15,8 +15,8 @@ const PlanMap = ({ planes, bg, text, button, w, click }) => {
     }, []);
 
     return (
-        <div className='flex flex-col h-full gap-8 lg:gap-10 p-4 lg:pt-12 w-full md:h-fit justify-center items-center lg:items-stretch'>
-            <div className='flex flex-row gap-4'>
+        <div className='flex flex-col h-full gap-8 w-screen lg:gap-10 p-4 lg:pt-12 w-full md:h-fit justify-center items-center lg:items-stretch'>
+            <div className='flex lg:flex-row flex-col gap-2 justify-center'>
                 {
                     planes.map((plan, index) => (
                         <motion.div
@@ -25,10 +25,10 @@ const PlanMap = ({ planes, bg, text, button, w, click }) => {
                             viewport={{ once: true }}
                             exit={{ opacity: 0, y: 50 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
-                            className={`flex flex-col border-2 border-black/10 rounded-2xl hover:shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl/20 w-5/6 lg:w-1/3 `} key={index}>
+                            className={`flex flex-col border-2 border-black/10 rounded-2xl hover:shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl/20 w-full lg:w-1/3 `} key={index}>
                             <div className='bg-stone-50 rounded-t-2xl flex flex-row justify-center items-center'>
                                 <Info text={text} info={plan.descripcion} />
-                                <h1 className='font-bold text-2xl text-neonblue p-4'>{plan.nombre}</h1>
+                                <h1 className='font-bold text-xl text-neonblue p-4'>{plan.nombre}</h1>
                             </div>
                             <div className={`border-t-4 border-white shadow-md flex flex-col justify-between p-4 pl-0 bg-stone-200 rounded-b-2xl z-0 h-full`}>
                                 <div className='text-sm md:text-lg lg:text-sm text-nowrap flex flex-col items-start justify-start p-2 w-fit'>
@@ -50,7 +50,7 @@ const PlanMap = ({ planes, bg, text, button, w, click }) => {
                     ))
                 }
             </div>
-            <div className={`border-t-2 border-black/50 shadow-md flex p-4 pl-0 bg-neutral-100 rounded-b-2xl z-0 h-fit justify-between items-between w-full`}>
+            <div className={`border-t-2 border-black/70 shadow-md flex p-4 pl-0 bg-neutral-100 rounded-b-2xl z-0 h-fit justify-between items-between w-full`}>
                 <h2 className='p-2 font-bold text-lg'>Personaliza tu plan</h2>
                 <button onClick={() => Nav("/custom-plan")} className={`${button} font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-110 duration-200 ease-out shadow-md hover:shadow-xl/20 cursor-pointer`}>Personalizar</button>
             </div>
