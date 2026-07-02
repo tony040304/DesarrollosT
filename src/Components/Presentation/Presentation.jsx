@@ -7,7 +7,7 @@ import NavBar from '../../Navs/NavBar.jsx'
 const Presentation = () => {
   return (
     <>
-      <NavBar visible={800} />
+      <NavBar visible={700} />
       <section
         id="presentation"
         className="relative min-h-screen h-full flex flex-col items-center justify-center p-4 bg-primario overflow-hidden bg-[url('/azul.png')] bg-cover bg-cente"

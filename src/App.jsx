@@ -1,4 +1,5 @@
-import react, { lazy, Suspense, useEffect } from 'react'
+import react, { lazy, Suspense, useEffect, useRef } from 'react'
+import { motion, useScroll, useTransform } from "framer-motion";
 import './App.css'
 import ButtonTop from './Components/ButtonTop'
 import Proyects from './Components/Proyects'
@@ -7,12 +8,13 @@ import Valores from './Components/Valores'
 import Plans from './Components/Plans'
 import Contacto from './Components/Contacto'
 import Lenis from "@studio-freight/lenis";
+import Welcome from './Components/Welcome'
+import Presentation from './Components/Presentation/Presentation'
 
 const LazyWelcome = lazy(() => import('./Components/Welcome'))
 const LazyPresentation = lazy(() => import("./Components/Presentation/Presentation"))
 
 const handleMessage = (servicio) => {
-  console.log(servicio);
   const phoneNumber = '5493416465444'; // Reemplaza con el número de teléfono deseado
   const message = `Hola, estoy interesado en obtener más información sobre sus servicios de ${servicio}`; // Reemplaza con el mensaje deseado
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
@@ -47,12 +49,26 @@ function App() {
     };
   }, []);
 
+  const containerRef = useRef(null);
+ 
+  // Medimos el progreso de scroll SOLO dentro de este contenedor de 200vh.
+  // Todo lo que esté fuera de containerRef no se ve afectado por esto.
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"],
+  });
+
+    console.log(scrollYProgress);
+    
   return (
     <>
       <Suspense fallback={<div>Cargando...</div>}>
-        <LazyWelcome />
+      <div className=" h-[200vh]" ref={containerRef}>
+        <Welcome progress={scrollYProgress} />
         <section id='inicio' />
         <LazyPresentation />
+      </div>
+      <div className="flex h-screen flex-col items-center justify-center "></div>
         <section id='valores' />
         <Valores />
         <div className='w-full bg-cover bg-center'>
@@ -62,7 +78,7 @@ function App() {
           </div>
           <div className='block md:hidden relative'>
             <ProyectsPhone title={"Proyectos"} fondo={`bg-[#FFFFFF] bg-center-left`} urlImg1="/optica.png" urlImg2="/optica.png" size='w-40' click={() => handleProyectClick('https://www.instagram.com/opticadelsiglo/')} />
-            <ProyectsPhone fondo={`bg-[#E4E4E4] bg-top-left`} urlImg1="/WebOptica.jpg" urlImg2="/MMep.jpg" urlImg3={'/Baires.png'} img={'w-full h-38 bg-cover bg-center object-cover'} click={() => handleProyectClick('https://opticadelsiglo.com.ar/')} click3={() => handleProyectClick('https://bairesdeportes.com.ar/')} />
+            <ProyectsPhone fondo={`bg-[#FFFFFF] bg-top-left`} urlImg1="/WebOptica.jpg" urlImg2="/MMep.jpg" urlImg3={'/Baires.png'} img={'w-full h-38 bg-cover bg-center object-cover'} click={() => handleProyectClick('https://opticadelsiglo.com.ar/')} click3={() => handleProyectClick('https://bairesdeportes.com.ar/')} />
           </div>
         </div>
         <section id='contacto' />

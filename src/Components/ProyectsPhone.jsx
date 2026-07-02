@@ -69,7 +69,7 @@ const ProyectsPhone = ({ urlImg1, urlImg2, size = "w-60", fondo, urlImg3, img, t
     }
 
     return (
-        <div className={`h-screen flex flex-col items-center justify-start ${fondo} bg-cover gap-50`}>
+        <div className={`h-screen flex flex-col items-center justify-start ${fondo} bg-cover gap-20`}>
             <h1 className='font-black text-4xl md:text-7xl xl:text-7xl text-nowrap text-neonblue p-8 w-full flex justify-center items-center text-center'>{title}</h1>
             <div className={`h-fit flex items-center justify-center`}>
                 <div className="flex flex-col">
