@@ -8,7 +8,7 @@ const PreviousCard = ({ click, planes, title, card }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className={`${!isOpen ? 'h-screen' : 'h-fit'} lg:h-screen w-full flex flex-col justify-start items-center bg-cover `}>
+        <div className={`${!isOpen ? 'h-screen' : 'h-fit'} w-full flex flex-col justify-start items-center bg-cover `}>
             <h1 className='font-black text-4xl md:text-7xl xl:text-7xl text-wrap text-stone-300 p-2 text-center mt-22'>{title}</h1>
             <div className={`flex justify-center items-center ${!isOpen ? 'h-screen' : 'h-fit'}`}>
                 {!isOpen ?

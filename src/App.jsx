@@ -73,8 +73,8 @@ function App() {
         <Valores />
         <div className='w-full bg-cover bg-center'>
           <div className='hidden md:block'>
-            <Proyects title={"Proyectos"} urlImg1="/optica.png" urlImg2="/optica.png" x={-100} x1={100} fondo={`bg-[url('/blancoAzul.png')]`} />
-            <Proyects urlImg1="/WebOptica.jpg" urlImg2="/MMep.jpg" urlImg3="/Baires.png" x={-200} x1={200} x1trans={400} y={10} size='md:w-96' img={'w-full h-60 bg-cover bg-center object-cover'} xTrans={-400} fondo={`bg-[url('/blancoAzul.png')]`} />
+            <Proyects title={"Clientes"} urlImg1="/optica.png" urlImg2="/optica.png" x={-100} x1={100}  />
+            <Proyects urlImg1="/WebOptica.jpg" urlImg2="/MMep.jpg" urlImg3="/Baires.png" x={-200} x1={200} x1trans={400} y={10} size='md:w-96' img={'w-full h-60 bg-cover bg-center object-cover'} xTrans={-400} />
           </div>
           <div className='block md:hidden relative'>
             <ProyectsPhone title={"Proyectos"} fondo={`bg-[#FFFFFF] bg-center-left`} urlImg1="/optica.png" urlImg2="/optica.png" size='w-40' click={() => handleProyectClick('https://www.instagram.com/opticadelsiglo/')} />
