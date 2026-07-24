@@ -19,3 +19,110 @@
 :root {
   font-family: "RocaOne", sans-serif;
 }
+
+/* ============================================
+   AURORA BORDER — versión React (scoped)
+   Se ancla al contenedor padre más cercano que
+   tenga `position: relative`, NO a toda la pantalla.
+   ============================================ */
+
+.aurora-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* no bloquea clicks del contenido de adentro */
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Colores — cambiá estos valores para ajustar la paleta */
+.aurora-wrapper {
+  --aurora-1: #b1e936; /* verde lima */
+  --aurora-2: #b1e936; /* turquesa */
+  --aurora-3: #b1e936; /* violeta */
+  --aurora-4: #080954; /* azul */
+  --grosor: clamp(2cm, 4vw, 3cm); /* grosor de la franja: 2 a 3 cm */
+}
+
+.aurora-edge {
+  position: absolute;
+  filter: blur(18px);
+  opacity: 0.28;
+  mix-blend-mode: screen;
+}
+
+/* Borde inferior */
+.aurora-bottom {
+  bottom: calc(var(--grosor) * -0.6);
+  left: -10%;
+  width: 120%;
+  height: var(--grosor);
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--aurora-3) 15%,
+    var(--aurora-1) 40%,
+    var(--aurora-4) 65%,
+    transparent 100%);
+  animation: aurora-driftX 20s ease-in-out infinite alternate-reverse;
+}
+
+/* Borde izquierdo */
+.aurora-left {
+  top: -10%;
+  left: calc(var(--grosor) * -0.6);
+  width: var(--grosor);
+  height: 120%;
+  background: linear-gradient(180deg,
+    transparent 0%,
+    var(--aurora-2) 25%,
+    var(--aurora-1) 50%,
+    var(--aurora-3) 75%,
+    transparent 100%);
+  animation: aurora-driftY 18s ease-in-out infinite alternate;
+}
+
+/* Borde derecho */
+.aurora-right {
+  top: -10%;
+  right: calc(var(--grosor) * -0.6);
+  width: var(--grosor);
+  height: 120%;
+  background: linear-gradient(180deg,
+    transparent 0%,
+    var(--aurora-4) 20%,
+    var(--aurora-3) 50%,
+    var(--aurora-1) 80%,
+    transparent 100%);
+  animation: aurora-driftY 22s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes aurora-driftX {
+  0%   { transform: translateX(-3%) translateY(0) scaleY(1); }
+  50%  { transform: translateX(3%) translateY(1.5vh) scaleY(1.08); }
+  100% { transform: translateX(-2%) translateY(-1vh) scaleY(0.96); }
+}
+
+@keyframes aurora-driftY {
+  0%   { transform: translateY(-3%) translateX(0) scaleX(1); }
+  50%  { transform: translateY(3%) translateX(1.5vw) scaleX(1.1); }
+  100% { transform: translateY(-2%) translateX(-1vw) scaleX(0.94); }
+}
+
+/* Pantallas chicas: un pelín más fino y sutil todavía */
+@media (max-width: 480px) {
+  .aurora-wrapper {
+    --grosor: clamp(1.5cm, 8vw, 2cm);
+  }
+  .aurora-edge {
+    filter: blur(12px);
+    opacity: 0.22;
+  }
+}
+
+/* Respeta a quienes prefieren menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .aurora-edge {
+    animation: none;
+  }
+}

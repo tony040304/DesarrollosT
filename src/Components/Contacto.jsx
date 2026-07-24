@@ -12,40 +12,47 @@ const Contacto = () => {
     };
 
     return (
-        <div className={`w-full h-screen flex bg-[url('/azul.png')] bg-center bg-cover text-white flex-col items-center`}>
-            <div className='w-full flex justify-center items-start pt-20'>
-                <h1 className='text-6xl text-white'>Contacto</h1>
-            </div>
-            <div className='w-5/6 lg:w-1/3 flex items-center justify-center bg-gray-300/30 backdrop-blur-sm mt-10 p-2 rounded-2xl'>
-                <ContactForm />
-            </div>
-            {/* <div className='w-full flex flex-col justify-center items-center px-10 md:mt-12'>
-                <h2 className='text-4xl text-white'>Redes sociales</h2>
-                <div className='flex flex-col justify-between w-full'>
-                    <div className='flex flex-col justify-center items-center md:mb-8'>
-                        <h3 className='text-white text-3xl'>Innovanto</h3>
-                        <div className='flex flex-row justify-between gap-8'>
-                            <InstagramLogo ig="innovanto.dg" />
-                            <button
-                                onClick={() => GoWhats()}
-                                className="bg-gradient-to-r from-lime-400 to-lime-300 shadow-lg shadow-lime-900/50 p-1.5 rounded-lg font-bold xl:w-fit xl:text-xl transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer"
-                            >
-                                WhatsApp
-                            </button>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-center gap-8'>
-                        <div className='flex flex-col items-center justify-center'>
-                            <h1 className='text-2xl text-white'>Antonella</h1>
-                            <InstagramLogo ig="_antodelgado_" />
-                        </div>
-                        <div className='flex flex-col items-center justify-center'>
-                            <h1 className='text-2xl text-white'>Antonio</h1>
-                            <InstagramLogo ig="antoniotorralbaa" />
-                        </div>
+        <div className="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-[#0a0e1a] to-[#080954] p-16">
+            <h2 className="text-5xl font-bold text-center text-white mb-16">Contacto</h2>
+
+            <div className="grid md:grid-cols-2 gap-10 items-start">
+                {/* Info lateral */}
+                <div className="text-white space-y-6 pt-4">
+                    <h3 className="text-2xl font-semibold text-neon">
+                        Hablemos de tu proyecto
+                    </h3>
+                    <p className="text-gray-400">
+                        Contanos qué necesitás y te respondemos a la brevedad.
+                    </p>
+                    <div className="space-y-3 text-gray-300">
+                        {/* <p>📧 @innovante.com</p> */}
+                        <p>📱 +54 9 11 3416-465444</p>
+                        <p>📍 Rosario, Santa Fe, Argentina</p>
                     </div>
                 </div>
-            </div> */}
+
+                {/* Form */}
+                <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-xl">
+                    <input
+                        type="text"
+                        placeholder="Tu nombre"
+                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 mb-4 focus:outline-none focus:border-[#b1e936] transition-colors"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Tu email"
+                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 mb-4 focus:outline-none focus:border-[#b1e936] transition-colors"
+                    />
+                    <textarea
+                        placeholder="Contanos qué necesitás..."
+                        rows={4}
+                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 mb-6 focus:outline-none focus:border-[#b1e936] transition-colors"
+                    />
+                    <button className="w-full bg-[#b1e936] text-[#0a0e1a] font-bold py-3 rounded-lg hover:brightness-110 hover:shadow-[0_0_20px_rgba(177,233,54,0.4)] transition-all">
+                        Enviar mensaje
+                    </button>
+                </div>
+            </div>
         </div>
     )
 }
