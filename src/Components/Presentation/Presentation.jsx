@@ -12,21 +12,12 @@ const Presentation = () => {
         id="presentation"
         className="relative min-h-screen h-full flex flex-col items-center justify-center p-4 bg-primario overflow-hidden bg-[#02051E] bg-cover bg-cente"
       >
-
         <div className="relative z-10 w-full flex flex-col items-center">
-
           <PresentationComponents
-            title="Community manager"
+            title="Redes sociales"
             paragraph="Gestionamos tus redes sociales con estrategias efectivas que fortalecen tu marca y generan interacción real con tu audiencia. Nos ocupamos de crear contenido atractivo, responder a tus clientes y potenciar tu presencia digital, para que puedas enfocarte en lo que realmente importa: tu negocio."
             info=""
             where={'PlanCM'}
-          />
-
-          <PresentationComponents
-            title="Foto y video profesional"
-            paragraph="Producimos contenido visual profesional para tus redes y página web, transmitiendo la esencia de tu marca y generando mayor impacto en tu comunicación digital."
-            info=""
-            where={'PlanFoto'}
           />
           <PresentationComponents
             title="Edicion de video"

@@ -1,59 +1,30 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import CardLogo from './Card/CardLogo';
 
 const Proyects = ({ urlImg1, urlImg2, urlImg3, x, x1, y = 0, xTrans = -250, x1trans = 250, size = "md:w-60", fondo, img, title }) => {
     return (
-        <div className={`h-screen flex flex-col items-center justify-start bg-cover bg-center object-bottom-right gap-40`}>
-            <h1 className='font-black text-4xl md:text-7xl xl:text-7xl text-nowrap text-neonblue  w-full flex justify-center items-center text-center'>{title}</h1>
-            <div className={`h-fit flex items-center justify-center`}>
-                <div className="flex flex-col justify-between">
-                    <div className="relative flex justify-center">
-                        <motion.div
-                            initial={{ x: x, y: y, scale: 1, rotate: -10 }}
-                            whileHover={{ scale: 1.1, x: xTrans }}
-                            transition={{ type: "spring" }}
-                            className={`rounded-2xl shadow-lg border ${size} absolute bg-neon cursor-pointer z-10`}
-
-                        >
-                            <a href="https://www.instagram.com/opticadelsiglo/" target="_blank" rel="noopener noreferrer">
-                                <img
-                                    src={`${urlImg1}`}
-                                    alt="desk"
-                                    className="rounded-2xl shadow-md shadow-neon"
-                                />
-                            </a>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ x: x1, y: 0, scale: 1, rotate: 10 }}
-                            whileHover={{ scale: 1.1, x: x1trans }}
-                            transition={{ type: "spring" }}
-                            className={`rounded-2xl shadow-lg border border-black/20 ${size} absolute bg-neon cursor-pointer z-10`}
-                        >
-                            <img
-                                src={`${urlImg2}`}
-                                alt="desk"
-                                className={`rounded-2xl shadow-md shadow-neon ${img}`}
-                            />
-                        </motion.div>
-
-                        {urlImg3 &&
-                            <motion.div
-                                initial={{ x: 0, y: -20, scale: 1, rotate: 0 }}
-                                whileHover={{ scale: 1.2, x: 0, y: -50 }}
-                                transition={{ type: "spring" }}
-                                className={`rounded-2xl shadow-lg border ${size} absolute bg-neon cursor-pointer z-20`}
-                            >
-                                <a href="https://bairesdeportes.com.ar/" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        src={`${urlImg3}`}
-                                        alt="desk"
-                                        className="rounded-2xl shadow-md shadow-neon"
-                                    />
-                                </a>
-                            </motion.div>
-                        }
-                    </div>
+        <div className={`h-screen flex flex-col items-center justify-start  bg-[url('/blanco.png')] bg-cover bg-center object-bottom-right gap-40`}>
+            <h1 className='font-black pt-4 text-5xl md:text-7xl xl:text-7xl text-nowrap text-neonblue  w-full flex justify-center items-center text-center'>{title}</h1>
+            <div className="h-screen flex-col items-center justify-center gap-8">
+                <div className="relative flex flex-row items-end justify-center gap-8 xl:gap-70">
+                    <CardLogo>
+                        <img src="/Logos/MostraGalery.png" alt="" className="w-15 lg:w-20 lg:pb-10 rounded-4xl" />
+                    </CardLogo>
+                    <CardLogo>
+                        <img src="/Logos/ColegioOpticos.png" alt="" className="w-12 top-20 lg:w-20 lg:pt-50 rounded-3xl" />
+                    </CardLogo>
+                    <CardLogo>
+                        <img src="/Logos/Musa.png" alt="" className="lg:w-40 w-15 rounded-4xl" />
+                    </CardLogo>
+                </div>
+                <div className="flex flex-row items-end justify-center gap-4 xl:gap-70">
+                    <CardLogo>
+                        <img src="/Logos/Marvel.png" alt="" className="w-15 lg:w-40" />
+                    </CardLogo>
+                    <CardLogo>
+                        <img src="/Logos/Opticadelsiglo.png" alt="" className="w-20 lg:w-40" />
+                    </CardLogo>
                 </div>
             </div>
         </div>
