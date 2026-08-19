@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'motion/react';
 import { SlMenu } from "react-icons/sl";
 import setScroll from '../Components/Hook/setScroll';
 import { useNavigate } from 'react-router-dom';
+import Logo from "../Components/Logo/Logo"
 
 const menuVariants = {
   hidden: { x: "100%" },
@@ -42,15 +43,21 @@ const NavBar = ({ visible }) => {
     <>
       {
         window.scrollY > visible && (
-          <nav className='flex w-full h-20 bg-grayblue/80 backdrop-blur p-2 px-2 md:px-6 lg:px-12 xl:px-20 2xl:px-32 fixed top-0 left-0 z-50 shadow-md'>
+          <div className='flex w-full justify-center'>
+
+          <nav className='flex w-2/3 h-[70px] rounded-3xl border border-neonblue bg-white backdrop-blur p-2 px-2 mt-2 md:px-6 lg:px-12 xl:px-20 2xl:px-32 fixed align-middle top-0 z-50 shadow-md'>
             <div className='flex flex-row items-center justify-between w-full px-6'>
               <motion.div className='w-20 cursor-pointer'
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
-              >
-                <img src="/LogoAzul.png" alt="Logo" onClick={() => Nav("/")} /></motion.div>
-              <div className='md:block hidden font-bold text-2xl text-neonblue'>
+                >
+                <div className='flex w-[60px]'>
+                <Logo/>
+                </div>
+                {/* <img src="/LogoAzul.png" alt="Logo" onClick={() => Nav("/")} /> */}
+                </motion.div>
+              <div className='md:block hidden font-bold text-xl font-light text-neonblue'>
                 <div className='flex flex-row gap-x-10'>
                   <ul className='cursor-pointer' onClick={() => Nav("/")}>Inicio</ul>
                   <ul className='cursor-pointer' onClick={() => scrollToSection("servicios")}>Servicios</ul>
@@ -62,16 +69,16 @@ const NavBar = ({ visible }) => {
                 <AnimatePresence>
                   {NavOpen && (
                     <motion.aside
-                      variants={menuVariants}
-                      initial="hidden"
-                      animate="visible"
-                      exit="exit"
-                      className="fixed top-0 right-0 h-screen w-3/4 bg-zinc-900 z-50 p-6"
+                    variants={menuVariants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="exit"
+                    className="fixed top-0 right-0 h-screen w-3/4 bg-zinc-900 z-50 p-6"
                     >
                       <button
                         onClick={() => setNavOpen(false)}
                         className="text-neon text-2xl mb-10"
-                      >
+                        >
                         ✕
                       </button>
 
@@ -88,6 +95,7 @@ const NavBar = ({ visible }) => {
               </div>
             </div>
           </nav >
+        </div>
         )}
     </>
   )
